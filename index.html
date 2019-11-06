@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Natalie Aldrich Web Portfolio</title>
+		<title>Natalie Rawson Web Portfolio</title>
 		<link href="https://fonts.googleapis.com/css?family=Calligraffitti|Raleway" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -246,7 +246,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggledContent" aria-controls="toggledContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span></button>	
 			<a class="navbar-brand" href="#">
-				Natalie Aldrich
+				Natalie Rawson
 			</a>
 			<div class="collapse navbar-collapse" id="toggledContent">
 			<ul class="navbar-nav ml-auto">
@@ -278,8 +278,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 			<div id="logic">
 			<h3>Logic</h3>
 			<nav id="proj-2017">
-				<a href="https://nataliealdrich.github.io/etch-a-sketch/">Etch-A-Sketch</a>
-				<a href="https://nataliealdrich.github.io/rock-paper-scissors/">Rock Paper Scissors (Unstyled)</a>
+				<a href="https://natalieRawson.github.io/etch-a-sketch/">Etch-A-Sketch</a>
+				<a href="https://natalieRawson.github.io/rock-paper-scissors/">Rock Paper Scissors (Unstyled)</a>
 				<a href="js-class/Project/project.html">Javascript & jQuery Project</a>
 				<a href="js-class/index.html" class="too-long">Javascript & jQuery Textbook Exercise Index</a>
 				<!--<a href="#">Animation Test</a>
@@ -349,10 +349,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 		</section>
 		<footer id="contact">
 			<nav>
-				<a href="https://www.linkedin.com/in/natalie-aldrich-7b0522144/">LinkedIn</a>
-				<a href="NatalieAldrichWebResume.pdf">Resumé</a>
-				<a href="https://github.com/nataliealdrich">Github</a>
-				<a href="mailto:n.aldrich827@gmail.com">Email</a>
+				<a href="https://www.linkedin.com/in/natalie-Rawson-7b0522144/">LinkedIn</a>
+				<a href="NatalieRawsonWebResume.pdf">Resumé</a>
+				<a href="https://github.com/natalieRawson">Github</a>
+				<a href="mailto:n.Rawson827@gmail.com">Email</a>
 			</nav>
 		</footer>
 	 
