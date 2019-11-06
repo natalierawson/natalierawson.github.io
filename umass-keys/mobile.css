@@ -1,0 +1,419 @@
+@media screen and (max-width: 480px) {
+	#container {
+		
+		width: 100%;
+		max-width: 480px;
+		overflow: hidden;
+	
+	}
+	
+	header {
+		background: #f7941d;
+		width: 100%;
+		max-width: 480px ;
+		overflow: hidden;
+		margin-left: 0;
+	}
+	
+	#logo {
+		width: 12em;
+		display: block;
+		
+		
+	}
+				
+#main-nav {
+	width: 100%;
+	max-width: 480px ;
+	position: relative;
+	top: -85px;
+	left: 350px;
+			}
+
+#main-nav li {
+    float: none;
+}
+			
+.dropdown {
+	 position: relative;
+	left: -200px;
+    display: inline-block;
+			}
+			
+ .dropbtn {
+	margin-right: 10px; 
+	margin-left: -140px;
+	margin-bottom: 2px; 
+	position: relative;
+	top: 80px; 
+	width: auto;
+	padding: 10px;
+	text-align: left;
+	
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+   	width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 2;
+}
+
+/* Links inside the dropdown */
+ .dropdown-content a {
+	border-radius: 0;
+	width: 190px;
+	margin-left: 0px;
+    color: black;
+	background: none;
+	font-size: 18px;
+	text-align: left;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	}
+	#main {
+		width: 100%;
+		max-width: 480px;
+		overflow: hidden;
+		margin-left: 0;
+	}
+	
+	#intro{
+		width: 100%;
+		margin-top: 20px;
+		border-radius: 0px;
+		height: 870px;
+		max-width: 480px;
+		margin-left: 0;
+	}
+	
+	#mission {
+		width: 100%;
+		
+	}
+	
+	#mission p {
+		margin-left: 20px;
+	}
+	
+	#videos {
+		width: 100%;
+		position: relative;
+		top: 11px;
+		left: 0px
+	}
+	
+	#news {
+		width: 100%;
+		top: 10px;
+	}
+	
+	#news h1 {
+		margin-left: 130px;
+	}
+	
+	#news ul {
+		margin-left: 20px;
+	}
+	
+	#news-icons img {
+				display: block;
+				margin-top: 0px;
+				margin-left: 300px;
+				padding-right: 30px;
+			}
+			
+#fb-icon {
+			position: relative;
+			top:-150px;
+			height: 90px;
+			}
+			
+			#cal-icon {
+				height: 98px;
+				position: relative;
+				top: -140px;
+			}
+	
+	#top-test{
+		width: 100%;
+		
+	}
+	
+	#slides {
+		width: 100%;
+		min-width: 320px;
+		max-width: 480px;
+		height: 500px;
+		margin-left: 0px;
+		position: relative;
+		left: -480px;
+	}
+	
+	#slides ul{
+		width: 100%;
+		
+		
+	}
+	
+	#slides li {
+		width: 100%;
+		min-width: 320px;
+		max-width: 480px;
+		display: block;
+		
+	}
+	
+	quote-phrase,
+.quote-author{
+	width: 100%;
+	display: block;
+	}
+	
+	footer{
+		width: 100%;
+		max-width: 480px;
+		height: 430px;
+		
+	}
+	
+	footer section {
+		float: none;
+	}
+	
+	#contact-list ul {
+		display: block;
+	}
+	
+	#other-locs{
+	position: relative;
+	top: 10px;
+	
+			}
+
+#misc-links {
+	position: relative;
+	top:10px;
+	margin-left: 10px;
+			}
+#footlogo {
+	width: 200px;
+	position: relative;
+	left: 10px;
+	top: 20px;
+			}
+	
+	#about {
+		width: 100%;
+		margin-top: 20px;
+		border-radius: 0;
+		height: 2450px;
+		}
+		
+	#about h1 {
+		text-align: center;
+		position: relative;
+		right: 25px;
+		}
+	#about img {
+		float: none;
+		display: block;
+		margin-bottom: 20px;
+		}
+		
+	#about p {
+		width: 90%;
+		min-width: 320px;
+		
+		}
+		
+	#inga-pic {
+		width: 100%;
+		margin: auto;
+		}
+	
+	#inga-conduct {
+		width: 95%;
+		
+		}
+	
+		
+	#faculty {
+		width: 100%;
+		}
+		
+	#fac-nav {
+		width: 100%;
+		border-radius: 0;
+		margin-top: -15px;
+		}
+	#fac-nav ul {
+		width: 90%;
+		}
+	#fac-nav li span {
+		display: block;
+		}
+	#fac-bios {
+		width: 100%;
+		border-radius: 0px;
+		}
+		
+	#fac-bios section {
+		width: 90%;
+		margin-left: -80px;
+			
+		}
+	#testimonials {
+	margin-top: 30px;
+			}
+
+#testimonials h1 {
+	text-align: center;
+			}
+#testimonials section {
+	width: 100%;
+	border-radius: 0px;
+			}
+			
+	
+#testimonials section section {
+	width: 90%;
+	margin-left: -20px;
+			}
+
+#pros-test {
+	height: 1400px;
+			}
+
+#meena-test blockquote {
+	
+	margin-top: 220px;
+			}
+
+#alum-test {
+	height: 1200px;
+			}
+
+#all-fam {
+	width: 100%;
+	height: 3600px;
+	border-radius: 0px;
+			}
+#fam-test {
+	column-count: 1;
+	
+			}
+#fam-test blockquote {
+	width: 90%;
+			}
+#testimonials section footer {
+		background: transparent;
+		color: #000;
+		font-size: 15px;
+		height: auto;
+			}
+	
+	#class-nav {
+	margin-top: 0px;
+				}
+
+#class-nav li {
+	padding: 20px;
+				}
+				
+#classes {
+	margin-top: -20px;
+	height: 10080px;
+	width: 100%;
+	background: url(images/hands-piano-background-min.jpeg) center center fixed;
+	background-size: 1000px;
+	margin-bottom: -10px;
+				}
+				
+#classes section {
+	background: none;
+	width: 100%;
+				}
+			
+#sect-wrap {
+	width: 100%;
+	border-radius: 0;
+				}
+#classes section div section {
+	width: 100%;
+				}
+
+				
+#classes h1 {
+	
+				}
+
+#classes p, #classes h4, #classes h3 {
+	width: 90%;
+			}
+	
+	#lessons-wrap {
+	width: 100%;
+	height: 1000px;
+	border-radius: 0px;
+		}
+		
+#private-lessons,#summer-lessons {
+	width: 100%;
+	margin: auto;
+	
+		}
+#private-lessons h1, #private-lessons p, #private-lessons h4, #summer-lessons p {
+    width: 90%;
+		}
+		
+#lessons-imgs {
+	display: none;
+		}
+#summer-lessons {
+	border-radius: 0;
+		}
+
+#summer-lessons h2 {
+	margin-left: -100px;
+		}
+	
+#summer-classes {
+				width: 100%;
+			}
+			#summer-classes p, #summer-classes h4 {
+				width: 90%;
+				}
+			#summer-classes h3 {
+				margin-left: 20px;;
+			}
+			#summer-class-intro {
+				width: 100%;
+				border-radius: 0px;
+			}
+			#summer-curr-classes {
+				width: 100%;
+			}
+			
+			#summer-curr-classes h2 {
+				text-align: center;
+				margin-left: -220px;
+				width: 300px;
+			}
+			
+			#summer-curr-classes table {
+				display: block;
+				margin-bottom: 30px;
+				margin-top: -50px;
+				margin-left: -100px;
+			}
+			
+			#summer-curr-main {
+				width: 100%;
+			}	
+		}

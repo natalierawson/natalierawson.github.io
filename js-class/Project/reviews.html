@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+    <head>
+         <title>Review Stuff</title>
+        <meta charset="utf-8">
+        <link href="project.css" rel="stylesheet" type="text/css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<link href="jquery-ui.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display+SC" rel="stylesheet">
+        <link href="../../fixednav.css" rel="stylesheet" type="text/css">
+		<script>
+			$(document).ready(function() {
+				$('#mainNav').menu({
+					position: {
+						my: 'center top',
+						at: 'center bottom'
+					},
+					icons: {
+						submenu: 'ui-icon-triangle-1-s'
+					}
+				}); //menu
+				
+                var unmasked = new Image();
+                unmasked.src = 'RW2.png';    
+                var masked = $('#no-stop img').attr('src');
+                $('#no-stop img').hover(function() {
+                    $(this).attr('src', unmasked.src);
+                },
+                function() {
+                    $(this).attr('src', masked);
+                }); // rollover image
+				
+			});
+		</script>
+    </head>
+    <body>
+	  <nav class="fixed-nav-bar">
+			<ul>
+				<li><a>Natalie Aldrich</a></li>
+				<li><a href="../../index.html">Back to Project List</a></li>
+			</ul>
+	    </nav>	
+      <a href="project.html">
+		 <header>
+            <h1>!PLAYBILL</h1>
+            <p>if (likesMusicals == true)</p>
+        </header>
+	  </a>
+        	 <ul id="mainNav">
+				<li><a href="../index.html">Back to JS Index</a></li>
+				
+		   		<li><a href="reviews.html">All Reviews</a> 
+			   		<ul>
+						<li><a href="#hamrev">Hamilton</a></li>
+						<li><a href="#woodsrev">Into the Woods</a></li>
+						<li><a href="#kingrev">The King and I</a></li>
+						<li><a href="#dollyrev">Hello, Dolly!</a></li>
+						<li><a href="#phanrev">Phantom</a></li>
+						<li><a href="#shrekrev">Shrek</a></li>
+					</ul>
+		   		</li>
+				<li><a>My Collaboratory</a>
+					<ul>
+						<li><a href="to-the-trash.html">Drag and Drop Tutorial</a></li>
+						<li><a href="myplaylist.html">Sorting Tutorial</a></li>
+					</ul>
+		   		</li>
+			</ul>
+    <div class="container"></div>
+       <section id="reviews">
+    <h2 id="top">Reviews</h2>
+	<p id="disclaimer">Disclaimer: First draft final draft, opinions may be more about the show than the cast recording or may only serve as a comparison to another work, and are heavily padded by Lorem Ipsum.</p>	   
+       <div id="hamwrap">
+		    <section id="hamrev">
+            <h3>Hamilton</h3>
+			<h4>Music and Lyrics: Lin-Manuel Miranda</h4>
+            <img src="hamilton.jpg" class="album">
+            <p>The legend. No musical in the past 30 years has been able to gain as broad a following in the mainstream since maybe Cats or Les Miserables. Though you may not be able to afford tickets to the show, this cast recording contains 95% of the audio content. Highlights include the title song, "My Shot", "You'll Be Back", "Satisfied", "Wait For It", "Say No To This", and "Burn". Vivamus tristique scelerisque luctus. Maecenas porttitor nunc sit amet maximus aliquam. Nulla id quam elementum, sollicitudin ligula vitae, semper nisi. Pellentesque at egestas orci, eu maximus justo. Morbi commodo, tortor eget blandit tempor, lacus nibh venenatis quam, vitae lobortis dolor augue vitae dolor. Donec nec libero quam. Cras dignissim nunc a varius convallis. Integer vel ultricies enim.Ut maximus elit nec odio porttitor dictum. Nullam porta quam vitae urna tempor, nec pellentesque ligula rutrum. Duis ac scelerisque diam, a rutrum augue. Aliquam feugiat leo tortor, ac malesuada odio ullamcorper dignissim. Integer vel condimentum nisl. Aenean gravida quis eros eget convallis. Curabitur efficitur, metus vel imperdiet fringilla, nulla velit vulputate ligula, vel maximus tellus metus sit amet turpis.</p>
+            <figure>
+				<img src="hamilton_h.jpg" title="Who would have thought a hip-hop musical about the guy who set up the federal treasury would actually be a good idea? Lin-Manuel Miranda.">
+           
+			</figure>
+			<a href="#top" class="toTop">Back to top</a>
+        </section>
+		</div>
+        <section id="woodsrev" >
+            <h3>Into the Woods</h3>
+			<h4>Music and Lyrics: Stephen Sondheim</h4>
+			
+            <img src="woods.jpg" class="album">
+            The original cast recording. The best cast recording. Not only are all the songs intact, but they are superbly acted. At the very root of it is, of course, th fact that Stephen Sondheim is a god. Highlights include "Agony", "On the Steps of the Palace", "No More", and "No One Is Alone".Vivamus tristique scelerisque luctus. Maecenas porttitor nunc sit amet maximus aliquam. Nulla id quam elementum, sollicitudin ligula vitae, semper nisi. Pellentesque at egestas orci, eu maximus justo. Morbi commodo, tortor eget blandit tempor, lacus nibh venenatis quam, vitae lobortis dolor augue vitae dolor. Donec nec libero quam. Cras dignissim nunc a varius convallis. Integer vel ultricies enim.Ut maximus elit nec odio porttitor dictum. Nullam porta quam vitae urna tempor, nec pellentesque ligula rutrum. Duis ac scelerisque diam, a rutrum augue. Aliquam feugiat leo tortor, ac malesuada odio ullamcorper dignissim. Integer vel condimentum nisl. Aenean gravida quis eros eget convallis. Curabitur efficitur, metus vel imperdiet fringilla, nulla velit vulputate ligula, vel maximus tellus metus sit amet turpis.
+            <figure>
+				<img src="woods_h.jpg" title="Spoiler: The Giant's a woman.">
+			</figure>
+			<a href="#top" class="toTop">Back to top</a>
+        </section>
+        <section id="kingrev" >
+            <h3>The King and I</h3>
+			<h4>Music and Lyrics: Richard Rodgers and Oscar Hammerstein II</h4>
+            <img src="king.jpg" class="album" >
+            <p>While this show is a standard, the 1977 cast recording is arguably the best representative of why. Towers is a plucky, yet tuneful Anna Leonowens. Brynner is at his most comfortable in the role of the King, having been given over 20 years to grow into it after originating it in the early 1950s. The supporting cast is also very strong, but since I'm not being graded on my knowledge musical theater history and I can't remember who was cast as what, I'll just say that the lady playing Tuptim and the man playing her lover deliver their duets stunningly, especially "I Have Dreamed". Highlights of the show include "Hello, Young Lovers", "Puzzlement", "I Have Dreamed", and "Shall We Dance?".Vivamus tristique scelerisque luctus. Maecenas porttitor nunc sit amet maximus aliquam. Nulla id quam elementum, sollicitudin ligula vitae, semper nisi. Pellentesque at egestas orci, eu maximus justo. Morbi commodo, tortor eget blandit tempor, lacus nibh venenatis quam, vitae lobortis dolor augue vitae dolor. Donec nec libero quam. Cras dignissim nunc a varius convallis. Integer vel ultricies enim. Ut maximus elit nec odio porttitor dictum. Nullam porta quam vitae urna tempor, nec pellentesque ligula rutrum. Duis ac scelerisque diam, a rutrum augue. Aliquam feugiat leo tortor, ac malesuada odio ullamcorper dignissim. Integer vel condimentum nisl. Aenean gravida quis eros eget convallis. Curabitur efficitur, metus vel imperdiet fringilla, nulla velit vulputate ligula, vel maximus tellus metus sit amet turpis.</p>
+            <figure>
+				<img src="king_h.jpg" title="Yul Brynner and Constance Towers in the iconic Shall We Dance scene, tastelessly screenshotted from Getty Images to avoid watermarks.">
+          
+			</figure>
+			<a href="#top" class="toTop">Back to top</a>
+        </section>
+        <section id="dollyrev">
+            <h3>Hello, Dolly!</h3>
+			<h4>Music and Lyrics: Jerry Hermann</h4>
+            <img src="dolly.jpeg" class="album">
+            <p>Nostalgia reigns on this pick. While many will cite Carol Channing as the definitive Dolly, I will always hold affection for the Babs protrayal. The 1969 movie adaptation of "Hello, Dolly!" was the catalyst for my love of musical theater, so I'm willing to let many things slide here. The one issue I am unwilling to let slide in the name of nostalgia is that of the lack of any chemistry between Matthau and Streisand. There must be some production that can show why the vivacious Dolly Levi and the unbearably drab and curmudgeonly Horace Vandergelder work as a couple because this movie fails to deliver. The two leads were at war behind the scenes and it shows Similarly, though Michael Crawford lacks the singing chops, his Cornelius Hackle is nothing short of adorkable. He is especially endearing in the Act II ballad, "It Only Takes A Moment".Vivamus tristique scelerisque luctus. Maecenas porttitor nunc sit amet maximus aliquam. Nulla id quam elementum, sollicitudin ligula vitae, semper nisi. Pellentesque at egestas orci, eu maximus justo. Morbi commodo, tortor eget blandit tempor, lacus nibh venenatis quam, vitae lobortis dolor augue vitae dolor. Donec nec libero quam. Cras dignissim nunc a varius convallis. Integer vel ultricies enim. Ut maximus elit nec odio porttitor dictum. Nullam porta quam vitae urna tempor, nec pellentesque ligula rutrum. Duis ac scelerisque diam, a rutrum augue. Aliquam feugiat leo tortor, ac malesuada odio ullamcorper dignissim. Integer vel condimentum nisl. Aenean gravida quis eros eget convallis. Curabitur efficitur, metus vel imperdiet fringilla, nulla velit vulputate ligula, vel maximus tellus metus sit amet turpis. </p>
+           <figure>
+			    <img src="dolly_h.png" title="Louis Armstrong shatters the fourth wall.">
+            
+		  </figure>
+			<a href="#top" class="toTop">Back to top</a>
+        </section>
+        <section id="phanrev">
+            <h3>Phantom (An American Sensation? IDK.)</h3>
+			<h4>Music and Lyrics: Maury Yeston and Arthur Kopit</h4>
+            <img src="phantom.jpg" class="album">
+            <p>Easily the more obscure of the two Phantom of the Opera shows conceived in the 80s. Blown away by the success of the Webber version, the Yeston version was restricted to an Off-Broadway run (and a mini-series sans music). This by no means means it was the inferior of the two shows, though. Yeston's Phantom, both the character and the work, radiates more warmth than their rock opera counterparts. In the recording, Richard White portrays a haunting, yet gentle (well, relatively) Phantom. Glory Crampton's Christine is also vibrant and charming. Vivamus tristique scelerisque luctus. Maecenas porttitor nunc sit amet maximus aliquam. Nulla id quam elementum, sollicitudin ligula vitae, semper nisi. Pellentesque at egestas orci, eu maximus justo. Morbi commodo, tortor eget blandit tempor, lacus nibh venenatis quam, vitae lobortis dolor augue vitae dolor. Donec nec libero quam. Cras dignissim nunc a varius convallis. Integer vel ultricies enim. Ut maximus elit nec odio porttitor dictum. Nullam porta quam vitae urna tempor, nec pellentesque ligula rutrum. Duis ac scelerisque diam, a rutrum augue. Aliquam feugiat leo tortor, ac malesuada odio ullamcorper dignissim. Integer vel condimentum nisl. Aenean gravida quis eros eget convallis. Curabitur efficitur, metus vel imperdiet fringilla, nulla velit vulputate ligula, vel maximus tellus metus sit amet turpis. </p>
+			<figure id="phanpic">
+			<img src="phantom_h.png" title="The Phantom attempts to get Christine totally smashed on their first date." >
+			</figure>
+			<div id="figbox">
+			
+			<figure id="no-stop">
+				<h5>Unmask the Phantom! (You meanie.)</h5>
+				<img src="RW1.png" id="deformity" title="Trivia: Within the same year, Richard White originated both the role of the Phantom in Yeston's musical and the role of Gaston in Beauty and the Beast">
+				
+			</figure>
+				
+				
+			</div>
+            <a href="#top" class="toTop">Back to top</a>
+			
+        </section>
+        <section id="shrekrev">
+            <h3>Shrek: The Musical</h3>
+			<h4>Music and Lyrics: Jeanine Tesori</h4>
+            <img src="shrek.jpg" class="album">
+            <p>In spite of it sounding like a blatant "Movie: The Musical" sell-out, Shrek manages to deliver. With a cast headed by Brian d'Arcy James and the incomparable Sutton Foster, Shrek: The Musical is able to delve a bit deeper into the collective stories of the title ogre and others from the Dreamworks movie. Highlights include "I Know It's Today", "Travel Song", "Who I'd Be", "What's Up, Dulac?" and "The Ballad of Lord Farquaad". Vivamus tristique scelerisque luctus. Maecenas porttitor nunc sit amet maximus aliquam. Nulla id quam elementum, sollicitudin ligula vitae, semper nisi. Pellentesque at egestas orci, eu maximus justo. Morbi commodo, tortor eget blandit tempor, lacus nibh venenatis quam, vitae lobortis dolor augue vitae dolor. Donec nec libero quam. Cras dignissim nunc a varius convallis. Integer vel ultricies enim. Ut maximus elit nec odio porttitor dictum. Nullam porta quam vitae urna tempor, nec pellentesque ligula rutrum. Duis ac scelerisque diam, a rutrum augue. Aliquam feugiat leo tortor, ac malesuada odio ullamcorper dignissim. Integer vel condimentum nisl. Aenean gravida quis eros eget convallis. Curabitur efficitur, metus vel imperdiet fringilla, nulla velit vulputate ligula, vel maximus tellus metus sit amet turpis.</p>
+            <figure>
+				<img src="shrek_h.png" title=" Surprisingly, a pretty decent musical. Go figure.">
+				
+			</figure>
+			<a href="#top" class="toTop">Back to top</a>
+        </section>
+		   
+        </section>
+    </body>
+</html>

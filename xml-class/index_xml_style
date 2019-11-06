@@ -1,0 +1,154 @@
+wrapper {
+	width: 100%;
+	margin: 0%;
+}
+
+body{
+	
+	font-family: Arimo, Tahoma, sans-serif;
+	padding: 0px 70px 40px 100px;
+	margin: 0%;
+   
+}
+
+header{
+	margin-left: -4%;
+    font-family: Arimo, Tahoma, sans-serif;
+	color: gray;
+	text-align: left;
+	padding: 0px 40px 0px 40px;
+	width: 25%;
+	font-size: 70%;
+		
+ }
+
+legend {
+	color:rgba(0,0,0,0.80);
+	font-size: 2em;
+	font-weight:bold;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	letter-spacing: 4px;
+	text-shadow: rgba(244,197,2,0.40) 2px 2px 1px;
+	
+}
+
+
+
+
+fieldset{
+
+	display: block;
+	width:95%;
+	padding: 0% 3% 0% 3%;
+	margin: 0% 8% 0% -2%;
+	
+}
+
+
+
+#assignments {
+	
+    background-color: rgba(13,0,1,0.5);
+	border: none;
+	display: block;
+	float: left;
+	width: 90%;
+	font-size: .8em;
+	margin: 0% 2% 1% 2%;
+	
+	
+}
+#tutorials {
+	background-color: rgba(13,0,1,0.5);
+	border: none;
+	display: block;
+	float:left;
+	width: 90%;
+	font-size: 1.1em;
+	margin:0%;
+}
+
+
+ul
+{    
+	background-size: 100%;
+	background-image:url(xml.jpg);
+    list-style-type: none;   
+	margin: auto;
+	
+ 
+}
+nav ul li a:link {
+	text-decoration: none;
+	
+}
+
+nav ul li {
+	width: 115%;
+	margin: 0% 30% 0% -10%;
+	background-color: white;
+	padding-left: 2%;
+	font-weight: bold;
+	font-size: 110%;
+	display: block;
+	line-height: 2.2em;
+
+	
+}
+
+nav ul li a{
+	color: black;
+	text-shadow:orange 1px 1px 1px;
+	font-weight: bold;
+	font-size: 110%;
+	display: block;
+	line-height: 2.2em;
+    margin: 1% 1% 1% 3%
+	
+}
+
+nav ul li a:hover {
+	color:white;
+	background-color: rgba(247,84,0, 1.00);
+    width: 95%;
+    padding-left: 2%;
+	margin-right: 4%;
+	margin-left: 0%;
+	
+    
+}
+
+
+
+.footer {
+	float: right;
+	display: block;
+	 clear: both;
+	     position: relative;
+    z-index: 10;
+    height: 4em;
+    margin-top: -4em;
+}
+	
+
+.footer p {
+	font-size: 13em;
+	font-weight:bold;
+	margin: 0px;
+	padding: 0px 0px 60px 0px;
+}
+
+
+nav ul #page_title {
+color: black;
+font-size: 2em;
+padding: 2%;
+}
+
+#assignments nav #blank_list{
+	background-image: none;
+}
+#assignments nav #blank_list li a:hover{
+	background-color: white;
+	color: orange;
+}

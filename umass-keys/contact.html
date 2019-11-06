@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="favicon.ico">
+		<title>Keys For Kids - Contact Us</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Muli|Open+Sans" rel="stylesheet">
+		<link href="reset.css" rel="stylesheet" type="text/css">
+		<link href="sitecss.css" rel="stylesheet" type="text/css">
+		<link href="../fixednav.css" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
+		<script>
+			 $(document).ready(function (){
+				$('#name').focus();
+				
+			$('#contactform').submit(function(){
+				var emailRegEx = new RegExp(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/);
+				var formEmail = $('#email').val();
+				var valid = emailRegEx.test(formEmail);
+					if(!valid){
+						alert('Please enter a valid email address.');
+						$('#email').focus();
+						return false;
+					}
+				}); // end submit		
+            }); //ready
+		</script>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			
+		<header>
+		<nav class="fixed-nav-bar">
+			<ul>
+				<li><a>Natalie Aldrich</a></li>
+				<li><a href="../index.html">Back to Project List</a></li>
+			</ul>
+	    </nav>		
+		<a href="index.html"><img src="images/kfklogo.png" id="logo"></a>
+		<nav id="main-nav">
+			<ul class="dropdown">
+				<li><a href="about.html" class="dropbtn">About</a>
+					<ul class="dropdown-content">
+						<li><a href="about.html">About</a></li>
+						<li><a href="faculty.html">Faculty</a></li>
+						<li><a href="testimonials.html">Testimonials</a></li>
+					</ul>
+				</li>
+				<li><a href="classes.html" class="dropbtn">Classes</a>
+					<ul class="dropdown-content">
+						<li><a href="classes.html">Group Classes</a></li>
+						<li><a href="private-lessons.html">Private Lessons</a></li>
+						<li><a href="http://www.keys-for-kids.com/documents/FlashCard.exe">Download Flashcards</a></li>
+						<li><a href="http://www.keys-for-kids.com/KeyMan.jnlp">Download KeyMan App</a></li>
+					</ul>
+				</li>
+				<li><a href="schedules.html" class="dropbtn">Schedule</a></li>
+				<li><a href="summer-camp.html" class="dropbtn">Summer</a>
+					<ul class="dropdown-content">
+						<li><a href="http://www.keys-for-kids.com/documents/KFK_SUMMER%20BROCHURE.pdf" >Summer Brochure</a></li>
+						<li><a href="http://www.keys-for-kids.com/documents/SummerProgramsRegistration.pdf">Summer Registration Form</a></li>
+						<li><a href="summer-camp.html">Summer Camp</a></li>							
+						<li><a href="summer-classes.html">Summer Group Classes</a></li>
+						
+						</ul>
+				</li>
+				<li><a href="enroll-tuition.html" class="dropbtn">Enroll</a>
+					<ul class="dropdown-content">
+						<li><a href="enroll-tuition.html">Tuition/Fees</a></li>
+						<li><a href="http://www.keys-for-kids.com/documents/Registration.pdf">Registration Form</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		</header>		
+		  <section id="contact">
+            <h1>Contact Us</h1>
+            <form id="contactform" name="contactform">
+				
+				<label for="name" class="name">Name</label>
+                <input type="text" name="name" id="name" required class="required" title="Please enter your name." placeholder="ex. Wolfgang Amadeus Mozart">
+                <label for="email" class="label">Email</label>
+                <input type="email" name="email" id="email"  required class="required" title="Please enter your email address." placeholder="ex. w.mozart@wien.at">
+				<label for="subject" class="label">Subject</label>
+				<input type="text" name="subject" id="subject" title="Please enter the subject of your message.">
+                 <label for="reqbox" class="label">Message</label>
+				<textarea name="reqbox" id="reqbox" placeholder="Hi! I'm Wolfgang. You might have heard of me. I'm kind of a big deal. Looking for a new teacher and heard about you! Unfortunately, since I was born in the 1700s, I have no idea how to use this page. I hope this reaches you!"></textarea>
+                <input type="submit" value="submit" name="submit" id="submit">
+            </form>
+			<section id="contact-pg-info">
+				
+				<h2>Keys for Kids</h2>
+			<ul>
+				<li>Phone:&nbsp;<a href="tel:+1781-274-9729">781-274-9729</a></li>
+				<li>Email:&nbsp;<a href="mailto:inga@keys-for-kids.com">Inga@keys-for-kids.com</a></li>
+				<address>
+					 1050 Waltham St., Suite 100,<br> 
+					 Lexington, MA 02421
+				</address>
+				<li><a href="http://www.facebook.com/pages/Keys-for-Kids-Music-School/136158436427716"><img src="images/facebook%20icon.ico" id="fb-icon"></a></li>
+			</ul>
+				
+			</section>
+			<div id="contact-gal">
+				<img src="images/Leah%20at%20Recital%202005.JPG">
+				<img src="images/DSC00566.JPG">
+			</div> 
+        </section>
+				<footer>
+			<div id="footer-wrap">
+				<section id="contact-list">
+				<h6>Keys for Kids</h6>
+				<ul>
+					<li>Phone: <a href="tel:+17812749729">781-274-9729</a></li>
+					<li>Email: <a href="mailto:inga@keys-for-kids.com">Inga@keys-for-kids.com</a></li>
+					<li>  
+				<address>
+					 1050 Waltham St., Suite 100, 
+					 Lexington, MA 02421
+				</address></li>
+					<li><a href="http://www.mapquest.com/maps/map.adp?searchtype=address&country=US&addtohistory=&searchtab=home&address=1050+Waltham+St.&city=Lexington&state=&zipcode=02421">Map & Directions</a></li>
+				</ul>
+				
+			</section>
+			<section id="other-locs">
+				<h6>Other Locations:</h6>
+				<ul>
+					<li><a href="http://www.keys-for-kids-andover.com/">Andover, MA</a></li>
+					<li><a href="http://www.powersmusic.org/programs/keys_for_kids">Belmont, MA</a></li>
+					<li><a href="http://keys-for-kids-newton.com/">Newton, MA</a></li>
+				</ul>
+			</section>
+			<section id="misc-links">
+				<ul>
+					<li><a href="http://www.keys-for-kids.com/Calendar.jsp">Calendar</a></li>
+					<li><a href="http://www.keys-for-kids.com/documents/Policy.pdf">Policy</a></li>
+					<li><a href="contact.html">CONTACT HTML FORM</a></li>
+				</ul>
+			</section>
+			<img src="images/kfklogo-white.png" id="footlogo">
+			</div>
+		</footer>
+		</div>
+	</body>
+</html>

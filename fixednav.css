@@ -1,0 +1,101 @@
+.fixed-nav-bar {
+	position: fixed;
+  	top: 0;
+  	left: 0;
+  	z-index: 9999;
+  	width: 100%;
+  	height: 3em;
+  	background-color: darkslateblue;
+	
+	
+			
+		}
+		
+.fixed-nav-bar li{
+			display: inline;
+			position: relative;
+			top:1em;
+			
+			
+		}
+		
+.fixed-nav-bar a {
+			color: white;
+			font-size: 1.2em;
+			font-family: sans-serif;
+			margin-left: 1%;
+			text-decoration: none;
+		}
+
+#aboutproj {
+		position: fixed;
+		z-index: 3;
+		width: 100%;
+	    top: 40px;
+		background:rgba(255,255,255,.93);
+		padding: 10px 0px 20px;
+		line-height: 1.2;
+		box-shadow: 0px 0px 5px;
+		}
+		
+	#close {
+		position: relative;
+		top: 0px;
+		left: 97%;
+		cursor: pointer;
+		font-family: sans-serif;
+		color: red;
+		font-size: 1.5em;
+		}
+	
+	#close:hover {
+		color: crimson;
+		text-decoration: none;
+}
+	#aboutproj h1, #aboutproj p {
+		width: 50%;
+		position: relative;
+		margin: auto;
+		}
+		
+	#aboutproj h1 {
+		margin-top: -20px;
+}
+	#aboutproj p {
+		margin-top: 10px;
+		font-family: sans-serif;
+		line-height: 120%;
+		}
+	#aboutproj ol {
+		
+		list-style-type: lower-alpha;
+		font-family: sans-serif;
+		position: relative;
+		width: 50%;
+		margin: auto;
+		line-height: 120%;
+}
+
+#goal-list {
+	font-size: .9em;
+
+}
+
+#html-goals {
+	margin-left: 0;
+	width: 500px;
+}
+
+#js-heading {
+	font-family: "Playfair+Display+SC", serif;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.book-title {
+	text-decoration: underline;
+}
+
+#xml-goals {
+	font-size: 15px;
+}

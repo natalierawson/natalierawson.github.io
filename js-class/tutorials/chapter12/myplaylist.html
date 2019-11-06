@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sortable Playlist</title>
+<link href="jquery-ui.min.css" rel="stylesheet">
+<link href="../_css/site.css" rel="stylesheet">
+<link href="interactions.css" rel="stylesheet">
+<link href="../../../fixednav.css" rel="stylesheet" type="text/css">	
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('#playlist').sortable({
+		opacity: 0.5,
+		placeholder: 'ui-state-highlight',
+		connectWith : '#favorites'
+	});
+	$('#favorites').sortable({
+		opacity: 0.5,
+		placeholder : 'ui-state-highlight',
+		connectWith : '#playlist'
+	});
+	});//end ready
+</script>
+</head>
+<body>
+<nav class="fixed-nav-bar">
+			<ul>
+				<li><a>Natalie Aldrich</a></li>
+				<li><a href="../index.html">Back to Project List</a></li>
+				<li><a href="../../index.html">Back to JS Index</a></li>
+			</ul>
+	    </nav>		
+<div class="wrapper">
+	<header>
+		JAVASCRIPT <span class="amp">&amp;</span> jQUERY: THE&nbsp;MISSING&nbsp;MANUAL
+	</header>
+	<div class="content">
+		<div class="main">
+			<h1>My Musical Playlist</h1>
+			<ul id="playlist" class="songList">
+				<li>Metissage -- Nicobox</li>
+				<li>Oriental Wind -- Joe Hisaishi</li>
+				<li>Spartacus Love Theme -- re-plus</li>
+			</ul>
+			<h1>Favorites</h1>
+			<ul id="favorites" class="songList">
+				<li>Brushed Away -- FAVORMUSIK</li>
+				<li>Heading Out Weast -- | | /\ M Z /\ | |</li>
+				<li>Spartacus Love Theme -- re-plus</li>
+				<li>Solitude -- re-plus</li>
+				<li>Metissage -- Nicobox</li>
+				<li>Hello, Stranger -- Humming Urban Stereo</li>
+				<li>One Summer's Day -- Joe Hisaishi</li>
+				<li>Oriental Wind -- Joe Hisaishi</li>
+				<li>Don't Get It Misunderstood -- Kyle Coglitore (ft. Venice)</li>
+			</ul>
+		</div>
+	</div>
+	<footer>
+		<p>JavaScript &amp; jQuery: The Missing Manual, 3rd Edition, by <a href="http://sawmac.com/">David McFarland</a>. Published by <a href="http://oreilly.com/">O'Reilly Media, Inc</a>.</p>
+	</footer>
+</div>
+</body>
+</html>
+	

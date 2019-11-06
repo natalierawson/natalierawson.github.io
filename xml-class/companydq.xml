@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+    Music Company
+    Author: Natalie Aldrich
+    Date: 2/11/16
+    Supporting Files: instruments.xsd, books.xsd
+-->
+
+    
+ <products>
+    <instruments>
+        <instrument>
+            <brand></brand>
+            <brand></brand>
+            ...
+        </instrument>
+        <instrument>
+            <brand></brand>
+            <brand></brand>
+            ...
+        </instrument>
+            ...
+    </instruments>
+    <books>
+        <theory>
+            <title></title>
+            <title></title>
+            ...
+        </theory>
+        <instruments>
+            <instrument>
+                <title></title>
+                <title></title>
+                ...
+            </instrument>
+             <instrument>
+                <title></title>
+                <title></title>
+                ...
+            </instrument>
+                ...
+        </instruments>
+        <biography>
+            <title></title>
+            <title></title>
+            ...
+        </biography>
+    </books>
+</products>

@@ -1,0 +1,140 @@
+     body{
+                font-family: "Arial", "Helvetica", sans-serif;
+                background:url(../summer-photographer-pier-adventure-min.jpg) no-repeat center center fixed;
+                background-size: cover;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+        
+     
+            }
+            
+           #js-index-head {
+               margin-top: 47px;
+                
+               padding: 5px 0;
+               width: 100%;
+               text-align: center;
+               background: white;
+               border-bottom-right-radius: 45px 15px;
+               border-bottom-left-radius: 45px 15px;
+               -moz-box-shadow: rgba(51, 51, 51, 0.5) 5px 3px 20px;
+               -webkit-box-shadow: rgba(51, 51, 51, 0.5) 5px 3px 20px;
+                box-shadow: rgba(51, 51, 51, 0.5) 5px 3px 20px; 
+            }
+            
+            h1 {
+                margin: 0px;
+                font-size: 24px;
+                font-family: 'Pacifico', cursive;
+                letter-spacing: .5px;
+                
+            }
+            
+            span#numbers {
+                font-size: 30px;
+            }
+            
+            #js-index-nav {
+                /*height: 300px; */
+                width: 750px;
+                margin: 50px auto;
+                padding: 10px;
+                background: rgba(0, 0, 0,.33);
+                border-radius: 100px;
+            }
+            
+            h2 {
+                text-align: center;
+                font-size: 22px;
+                color: #FDFCE3 ;
+            }
+            
+            div#tutorials {
+              
+                position: relative;
+                margin: 0 50px;
+				
+                
+             
+            }
+            
+            div#tut1 {
+                position: relative;
+                float: left;
+                width: 33%;
+                
+            }
+            
+            div#tut2 {
+                position: relative;
+                display: inline-block;
+                width: 33%;
+            }
+            
+            div#tut3 {
+                position: relative;
+                float: right;
+                width: 33%;            
+            }
+            
+            h3 {
+                position: relative;
+               padding: 20px 0;
+                color: #FDFCE3;
+        
+            }
+            
+            div#tutorials ul {
+                 
+                list-style: none;
+                padding: 0;
+                margin-top: -15px;
+            }
+            
+			
+			
+             div#tutorials li   {
+             
+			 margin-left: 0px;	 
+             padding-right: 10px;
+			 line-height: 1.2;
+           
+             }
+           
+            div#tutorials li a {
+                 color: #FFF; 
+            }
+			
+			
+            
+            li:hover {
+                background:  ;
+                
+            }
+            
+            li a:hover {
+                text-decoration: underline;
+            }
+            
+           a {
+                text-decoration: none;
+            }
+            
+            div#project {
+                 position: relative;
+                 clear: both;
+                 font-weight: bold;
+                text-align: center;
+            }
+            
+			div#project ul {
+				list-style: none;
+			}
+			
+            div#project a{
+                color: white;
+            }
+            /*footer {
+                height: 100px;
+            }*/

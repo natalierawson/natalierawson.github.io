@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello, World.</title>
+
+<link href="../_css/site.css" rel="stylesheet">
+<link href="../../../fixednav.css" rel="stylesheet" type="text/css">	
+<link href="jquery-ui.min.css" rel="stylesheet">    
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+   
+<script>
+    $(document).ready(function() {
+        $('#mainMenu').menu({
+            position: {
+                my: 'center top',
+                at: 'center bottom'
+            },
+        icons: {
+            submenu: 'ui-icon-triangle-1-s'
+        }
+    });//end menu
+    });// end ready
+</script>    
+<style>
+    
+    ul {
+        list-style: none;
+    }
+    #mainMenu {
+        float: left;
+        
+    }
+    
+    #mainMenu li {
+        width: 10em;
+        float: left;
+       
+    }
+    
+    ul li a {
+        text-decoration: none;
+        
+    }
+   
+    .ui-menu .ui-menu {
+        width: 10em;
+    }
+    
+</style>    
+</head>
+<body>
+<nav class="fixed-nav-bar">
+			<ul>
+				<li><a>Natalie Aldrich</a></li>
+				<li><a href="../index.html">Back to Project List</a></li>
+				<li><a href="../../index.html">Back to JS Index</a></li>
+			</ul>
+	    </nav>		
+<div class="wrapper">
+	<header>
+		JAVASCRIPT <span class="amp">&amp;</span> jQUERY: THE&nbsp;MISSING&nbsp;MANUAL 
+	</header>
+	<div class="content">
+        <h1>Single Level Horizontal Menus</h1>
+		<ul id="mainMenu" >
+            <li ><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Products</a>
+                <ul>
+                    <li><a href="#">Product A</a></li>
+                    <li><a href="#">Product B</a></li>
+                    <li><a href="#">Product C</a></li>
+                </ul>
+            </li>    
+        </ul>
+	</div>
+	<footer>
+		<p>JavaScript &amp; jQuery: The Missing Manual, 3rd Edition, by <a href="http://sawmac.com/">David McFarland</a>. Published by <a href="http://oreilly.com/">O'Reilly Media, Inc</a>.</p>
+	</footer>
+</div>
+</body>    

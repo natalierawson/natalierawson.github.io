@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--
+Title: Mrs. Lovett's Meat Pies
+By: Toby 
+Date: 10/31/1832
+Supporting Files: meatPies.xsl
+-->
+<pies>
+    <pie>
+        <name>Priest</name>
+        <goodness>Too good at least!</goodness>
+        <freshness>Pretty Fresh.</freshness>
+        <fat>An awful lot where it sat.</fat>
+        <beer>Yes</beer>
+    </pie>
+    <pie>
+        <name>Lawyer</name>
+        <goodness>Rather Nice</goodness>
+        <freshness>Sketchy. No one should swallow it twice.</freshness>
+        <fat>Probably less fatty than priest</fat>
+        <beer>Yes</beer>
+    </pie>
+    <pie>
+        <name>Royal Marine</name>
+        <goodness>British and Loyal</goodness>
+        <freshness>Clean, but tastes of wherever it's been.</freshness>
+        <fat>The closest we have to something lean.</fat>
+        <beer>Yes</beer>
+    </pie>
+</pies>

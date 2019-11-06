@@ -1,0 +1,298 @@
+<html>
+	<head>
+		<link rel="shortcut icon" href="favicon.ico">
+		<title>Keys For Kids Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Muli|Open+Sans" rel="stylesheet">
+		<link href="reset.css" rel="stylesheet" type="text/css">
+		 
+		<link href="sitecss.css" rel="stylesheet" type="text/css">
+		<link href="../fixednav.css" rel="stylesheet" type="text/css">
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />	
+	<link rel="stylesheet" type="text/css" href="mobile.css">	
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	
+	<script src="https://www.youtube.com/iframe_api"></script>
+	
+	<!-- End WOWSlider.com HEAD section -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
+	<script>
+		$(document).ready(function () {
+			
+  //rotation speed and timer
+  var speed = 10000;
+  
+  var run = setInterval(rotate, speed);
+  var slides = $('.slide');
+  var container = $('#slides ul');
+  var elm = container.find(':first-child').prop("tagName");
+  var item_width = container.width();
+  var previous = 'prev'; //id of previous button
+  var next = 'next'; //id of next button
+  slides.width(item_width); //set the slides to the correct pixel width
+  container.parent().width(item_width);
+  container.width(slides.length * item_width); //set the slides container to the correct total width
+  container.find(elm + ':first').before(container.find(elm + ':last'));
+  resetSlides();
+  
+  
+  //if user clicked on prev button
+  
+  $('#buttons a').click(function (e) {
+    //slide the item
+    
+    if (container.is(':animated')) {
+      return false;
+    }
+    if (e.target.id == previous) {
+      container.stop().animate({
+        'left': 0
+      }, 1500, function () {
+        container.find(elm + ':first').before(container.find(elm + ':last'));
+        resetSlides();
+      });
+    }
+    
+    if (e.target.id == next) {
+      container.stop().animate({
+        'left': item_width * -2
+      }, 1500, function () {
+        container.find(elm + ':last').after(container.find(elm + ':first'));
+        resetSlides();
+      });
+    }
+    
+    //cancel the link behavior      
+    return false;
+    
+  });
+  
+  //if mouse hover, pause the auto rotation, otherwise rotate it  
+  container.parent().mouseenter(function () {
+    clearInterval(run);
+  }).mouseleave(function () {
+    run = setInterval(rotate, speed);
+  });
+  
+  
+  function resetSlides() {
+    //and adjust the container so current is in the frame
+    container.css({
+      'left': -1 * item_width
+    });
+  }
+ 
+			
+		
+			
+});
+//a simple function to click next link
+//a timer will call this function, and the rotation will begin
+
+function rotate() {
+  $('#next').click();
+};	
+	</script>	
+	<script type="text/javascript" src="../projectdialog.js"></script>	
+	</head>
+	<body>
+		<nav class="fixed-nav-bar">
+			<ul>
+				<li><a>Natalie Aldrich</a></li>
+				<li><a href="../index.html">Back to Project List</a></li>
+			</ul>
+	    </nav>
+		<div id="aboutproj">
+			<a id="close">X</a>
+			<h1>Keys for Kids</h1>
+			<p>This site was completed during Fall 2016 for my Topics in Web Development: Adobe Dreamweaver class with UMass Lowell. The class was given a list of possible sites to give a full redesign. <a href="https://keys-4-kids.com">Keys for Kids</a> was my selection.</p>
+			<p>The goals for the project were to:</p>
+		<ol id="goal-list">
+			<li>Update the structure of the page so that it adheres to modern web standards.</li>
+			<li>Create a more accessible navigation scheme.</li>
+			<li>Implement an more pleasing color scheme.</li>
+			<li>Reorganize the site content with regards to usability.</li>
+			<li>Create a sitemap.</li>
+			<li>Create low-fi wireframes to illustrate the flow of content on every page.</li>
+			<li>Create two mockups of possible design choices for the index page.</li>
+		</ol>
+			<p>Note: Content on project reflects the content on the original site as of November 2016.</p>
+		</div>	
+	
+		<div id="container">
+		
+		<header>
+		
+		<a href="index.html"><img src="images/kfklogo.png" id="logo"></a>
+		<nav id="main-nav">
+			<ul class="dropdown">
+				<li><a href="about.html" class="dropbtn">About</a>
+					<ul class="dropdown-content">
+						<li><a href="about.html">About</a></li>
+						<li><a href="faculty.html">Faculty</a></li>
+						<li><a href="testimonials.html">Testimonials</a></li>
+					</ul>
+				</li>
+				<li><a href="classes.html" class="dropbtn">Classes</a>
+					<ul class="dropdown-content">
+						<li><a href="classes.html">Group Classes</a></li>
+						<li><a href="private-lessons.html">Private Lessons</a></li>
+						<li><a href="http://www.keys-for-kids.com/documents/FlashCard.exe">Download Flashcards</a></li>
+						<li><a href="http://www.keys-for-kids.com/KeyMan.jnlp">Download KeyMan App</a></li>
+					</ul>
+				</li>
+				<li><a href="schedules.html" class="dropbtn">Schedule</a></li>
+				<li><a href="summer-camp.html" class="dropbtn">Summer</a>
+					<ul class="dropdown-content">
+						<li><a href="http://www.keys-for-kids.com/documents/KFK_SUMMER%20BROCHURE.pdf" >Summer Brochure</a></li>
+						<li><a href="http://www.keys-for-kids.com/documents/SummerProgramsRegistration.pdf">Summer Registration Form</a></li>
+						<li><a href="summer-camp.html">Summer Camp</a></li>							
+						<li><a href="summer-classes.html">Summer Group Classes</a></li>
+						
+						</ul>
+				</li>
+				<li><a href="enroll-tuition.html" class="dropbtn">Enroll</a>
+					<ul class="dropdown-content">
+						<li><a href="enroll-tuition.html">Tuition/Fees</a></li>
+						<li><a href="http://www.keys-for-kids.com/documents/Registration.pdf">Registration Form</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		</header>	
+		<section id="main">
+			<div id="intro">
+				<section id="mission">
+					<h1>Private And Group Music Lessons For All Ages</h1>
+					<p>Whether you want to compete in prestigious competitions or play an instrument just for the joy of making music, Keys for Kids will help you and your child achieve your goals. With dynamic programs and outstanding teachers for every age, Keys for Kids maintains the highest standards of excellence in a warm, supportive environment that focuses on the joy of music. Shy or star, your child will be motivated and involved with hands-on, personalized instruction.</p>
+				</section>
+	
+				<section id="videos">
+					<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container0">
+	<div class="ws_images"><ul>
+		<li><iframe width="100%" height="100%" src="https://www.youtube.com/embed/57n_dR4E5xQ?autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe><img src="data0/images/57n_dr4e5xq.png" alt="Keys for Kids Music School 2015" title="Keys for Kids Music School 2015" id="wows0_0"/></li>
+		<li><iframe width="100%" height="100%" src="https://www.youtube.com/embed/NzV5IRR2LiM?autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe><img src="data0/images/nzv5irr2lim.png" alt="2016 PERFORMANCE GALA in Review" title="2016 PERFORMANCE GALA in Review" id="wows0_1"/></li>
+		<li><iframe width="100%" height="100%" src="https://www.youtube.com/embed/xSi1outTJek?autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe><img src="data0/images/xsi1outtjek.png" alt="2006 01 24 KeysForKidsOnUPN8 Composition1" title="2006 01 24 KeysForKidsOnUPN8 Composition1" id="wows0_2"/></li>
+		<li><iframe width="100%" height="100%" src="https://www.youtube.com/embed/QYkwboxI71A?autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe><img src="data0/images/qykwboxi71a.png" alt="wowslider" title="Interview at WBZ radio" id="wows0_3"/></li>
+		<li><iframe width="100%" height="100%" src="https://www.youtube.com/embed/In2Frj0xL30?autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe><img src="data0/images/in2frj0xl30.png" alt="KFK_Promotional_Video_by_Lauren_StoneCustom" title="KFK_Promotional_Video_by_Lauren_StoneCustom" id="wows0_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Keys for Kids Music School 2015"><span>1</span></a>
+		<a href="#" title="2016 PERFORMANCE GALA in Review"><span>2</span></a>
+		<a href="#" title="2006 01 24 KeysForKidsOnUPN8 Composition1"><span>3</span></a>
+		<a href="#" title="Interview at WBZ radio"><span>4</span></a>
+		<a href="#" title="KFK_Promotional_Video_by_Lauren_StoneCustom"><span>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">jquery slider</a> by WOWSlider.com v8.7.1m</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine0/wowslider.js"></script>
+	<script type="text/javascript" src="engine0/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+				</section>
+				<section id="news">
+					<h1>News</h1>
+					<ul>
+						<li>Fall 2016 Enrolling Now - <a href="mailto:inga@keys-for-kids.com">Contact us</a> to schedule FREE trial class.</li>
+						<li>New Keys for Kids video has been just released! Enjoy all seven minutes of this fun and informative video</li>
+					</ul>
+					<div id="news-icons">
+						<a href="http://www.facebook.com/pages/Keys-for-Kids-Music-School/136158436427716"><img src="images/facebook%20icon.ico" id="fb-icon"></a>
+					<a href="http://www.keys-for-kids.com/Calendar.jsp"><img src="images/calendar-icon.png" id="cal-icon"></a>
+					</div>
+				</section>
+			</div>
+			<div id="top-test">
+				<div class="btn-bar">
+  <div id="buttons">
+    <a id="prev" href="#">&lt;</a>
+    <a id="next" href="#">&gt;</a> 
+  </div>
+</div>
+<div id="slides">
+				<ul>
+					<li class="slide">
+						 <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span> ...my high school music theory teacher thinks I'm 'a genius.' <span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">-Jackson Thea, Keys for Kids alumni</p>
+        </div>
+						
+					</li>
+					<li class="slide">
+						<div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>
+						For our family, finding Keys for Kids was a life-changing event. My daughter started the group piano lessons in fourth grade... She has won gold medals and national recognition for her piano technique...She excels in her schoolwork and other activities and I believe much of this is due to the focus and work ethic she developed in Keys for Kids classes...if you really want your child to learn to play an instrument, you should explore Keys for Kids...<span class="quote-marks">"</span> </p></div> 
+						<div class="authorContainer">
+						<p class="quote-author">- Mansi Arora, parent</p>
+						</div>	
+					</li>
+					<li class="slide">
+						<div class="quoteContainer">
+							<p class="quote-phrase"><span class="quote-marks">"</span>The Keys for Kids program is an exceptionally well designed sequential piano program that allows young children to learn a variety of basic piano and musicianship skills. Students and parents alike learn and grow together, and the results are truly impressive, with end of the semester recitals where students perform a variety of musical pieces with confidence and pride. It is a wonderful program for children to experience the joys of music making, building blocks of music theory, and learning to read music on the piano. <span class="quote-marks">"</span> </p></div>
+						<div class="authorContainer">
+						<p class="quote-author">- James O'Dell, Assistant Dean, Boston Conservatory</p>
+						</div>
+					</li>
+					<li class="slide">
+						<div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>...As a parent, I appreciated being a part of the group classes and having the knowledge to support my child practicing at home. I was impressed by the creative and innovative lesson plans to make theory, ear training and playing come to life...<span class="quote-marks">"</span> </p>
+        </div> 
+						<div class="authorContainer">
+						<p class="quote-author">- Priscilla Cohen, parent</p>
+						</div>
+					</li>
+					<li class="slide">
+						<div class="quoteContainer">
+							<p class="quote-phrase"><span class="quote-marks">"</span>We love Keys for Kids!  The curriculum is very effective and kid-friendly. With this method, our children have quickly learned how to play the piano...and it's been fun along the way!  But even more important to us, it integrates music theory with the practice.  So, our children are becoming literate, thinking musicians.  They can analyze and understand the pieces they play. This program develops the fingers and the brain giving our three children a solid foundation in piano practice and music theory for the life time. <span class="quote-marks">"</span> </p>
+						</div> 
+						<div class="authorContainer">
+						<p class="quote-author">- Priscilla Cohen, parent</p>
+						</div>	
+					</li>
+				</ul>
+			</div>
+			</div>
+			</section> 
+			
+			
+		<footer>
+			<div id="footer-wrap">
+				<section id="contact-list">
+				<h6>Keys for Kids</h6>
+				<ul>
+					<li>Phone: <a href="tel:+17812749729">781-274-9729</a></li>
+					<li>Email: <a href="mailto:inga@keys-for-kids.com">Inga@keys-for-kids.com</a></li>
+					<li>  
+				<address>
+					 1050 Waltham St., Suite 100, 
+					 Lexington, MA 02421
+				</address></li>
+					<li><a href="http://www.mapquest.com/maps/map.adp?searchtype=address&country=US&addtohistory=&searchtab=home&address=1050+Waltham+St.&city=Lexington&state=&zipcode=02421">Map & Directions</a></li>
+				</ul>
+				
+			</section>
+			<section id="other-locs">
+				<h6>Other Locations:</h6>
+				<ul>
+					<li><a href="http://www.keys-for-kids-andover.com/">Andover, MA</a></li>
+					<li><a href="http://www.powersmusic.org/programs/keys_for_kids">Belmont, MA</a></li>
+					<li><a href="http://keys-for-kids-newton.com/">Newton, MA</a></li>
+				</ul>
+			</section>
+			<section id="misc-links">
+				<ul>
+					<li><a href="http://www.keys-for-kids.com/Calendar.jsp">Calendar</a></li>
+					<li><a href="http://www.keys-for-kids.com/documents/Policy.pdf">Policy</a></li>
+					<li><a href="contact.html">CONTACT HTML FORM</a></li>
+				</ul>
+			</section>
+			<img src="images/kfklogo-white.png" id="footlogo">
+			</div>
+		</footer>
+	</div>
+	</body>
+</html>

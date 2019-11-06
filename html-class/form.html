@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+		<link href="myreset.css" rel="stylesheet" type="text/css">
+        <link href="mycss.css" rel="stylesheet" type="text/css">
+		<link href="../fixednav.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <nav class="fixed-nav-bar">
+			<ul>
+				<li><a>Natalie Aldrich</a></li>
+				<li><a href="../index.html">Back to Project List</a></li>
+			</ul>
+	    </nav>
+		<header>
+			 <h1>Completely Legitimate Form</h1>
+        
+		</header>
+       <nav id="htmlnav">
+            <ul>
+                <li><a href="index.html">Index</a></li>
+            </ul>
+        </nav>
+       <form name="donationForm" id="donationForm" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" enctype="text/plain">
+           <table>
+                <tr>
+                    <th>Magazine Subscription Form</th>
+                </tr>
+                <tr>
+                    <td>First Name: </td>
+                    <td><INPUT TYPE="text"
+NAME="FirstName" value="First"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><INPUT TYPE="text"
+NAME="LastName" value="Last"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><INPUT TYPE="text"
+NAME="Address" value="Address"></td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td><INPUT TYPE="text"
+NAME="City" value="City"></td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td><INPUT TYPE="text"
+NAME="State" value="State"></td>
+                </tr>
+                <tr>
+                    <td>Zipcode:</td>
+                    <td><INPUT TYPE="text"
+NAME="Zip" value="#####"></td>
+                </tr>
+           </table> <br />       
+           <table>
+                <tr>
+                    <td><INPUT TYPE="checkbox" NAME="Newsweek"> Newsweek</td>
+                    <td><INPUT TYPE="checkbox" NAME="SportsIllustrated"> Sports Illustrated</td>
+                </tr>
+                <tr>
+                    <td><INPUT TYPE="checkbox" NAME="Time">Time</td>
+                    <td><INPUT TYPE="checkbox" NAME="InternetWorld"> Internet World</td>
+                </tr>
+           </table><br />  
+		   <table>
+			   <tr>
+				   <td>
+					   <INPUT TYPE="radio" NAME="payment" VALUE="1" CHECKED> Bill by mail
+				   </td>
+				   <td>
+					    <INPUT TYPE="radio" NAME="payment" VALUE="2"> Bill online
+				   </td>   
+			   </tr>
+		   </table>
+           
+            <br /><br />
+
+            <table>
+                <tr>
+                    <td>Card: </td>
+                    <td><SELECT NAME="Credit Card"> <br />
+                            <OPTION SELECTED>Please Choose...<br /><br />
+                            <OPTION>Visa<br/><br/>
+                            <OPTION>Master Card<br/><br/>
+                            <OPTION>Discover<br /><br />    
+                        </SELECT></td>
+                </tr>
+                <tr>
+                    <td>Card Number: </td>
+                    <td><INPUT TYPE="text"
+NAME="CardNumber" value="____-____-____-____"></td>
+                </tr>
+                <tr>
+                    <td>Expiration: </td>
+                    <td><INPUT TYPE="text"
+NAME="Expiration" value="__/__"></td>
+                </tr>
+                <tr>
+                    <td>Security Code:</td>
+                    <td><INPUT TYPE="text"
+NAME="Security" value="###"></td>
+                </tr>
+            </table>
+ <br />
+		<table>
+			<tr>
+				<td><INPUT TYPE="reset" VALUE="Reset Form"></td>
+				<td><INPUT TYPE="Submit" VALUE="Submit"></td>
+			</tr>
+		</table>				
+        
+        
+    </form>
+  </body>
+</html>

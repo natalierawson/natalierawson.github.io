@@ -1,0 +1,251 @@
+		/*Site Styles */
+
+        h1 {
+			color:darkslateblue;
+			text-align: center;
+			margin-top: .5em;
+			
+		}
+		
+		h1#head1 { 
+			font-family: 'Calligraffitti', cursive;
+		}
+		
+		span.big1 {
+			font-size: 50px;
+			letter-spacing: 2px;
+		}
+
+		nav {
+			width: 10em;
+			position: relative;
+			margin: auto;
+			top: -10px;
+			font-family: "Raleway", sans-serif;
+			
+			
+		}
+
+		nav a {
+			color: #000;
+			text-align: center;
+			
+			
+		}
+
+		nav a:hover {
+			 box-shadow: inset 0 -5px 0 0 darkslateblue;
+			color: #000;
+		}
+
+		
+		
+		h2 {
+			font-family: "Raleway", sans-serif;
+			text-align: center;
+}
+
+
+        .footer {
+			margin-top: 2em;
+			text-align: center;
+			margin-bottom: 0;
+			font-family: "Raleway", sans-serif;
+			color: #000;
+		}
+		
+		.footer p {
+			margin-bottom: 0;
+			
+			
+		}
+		
+		#nat-links {
+			list-style: none;
+			padding: 0;
+			margin-bottom: 0;
+		}
+		
+		#nat-links li {
+			display: inline;
+			padding: .5em;
+		
+			
+		}
+        #nat-links a {
+            color: #000;
+}
+        #nat-links a:hover {
+            color: darkslateblue;
+            text-decoration: none;
+}
+
+/* Project List Display */
+		#projects {
+			width: 30em;
+			margin: auto;
+}
+
+        .card a {
+            color: darkslateblue;
+            text-decoration: none;
+}
+        .card a:hover {
+            text-decoration: none;
+                
+}
+
+/* About Page */
+		#bio {
+			/*width: 75em;*/
+			width: 98%;
+			margin: auto;
+			margin-top: 2em;
+			column-count: 2;
+			font-family: "Raleway", sans-serif;
+			
+		}
+		
+		#bio p {
+			/*width: 37em;*/
+			width: 99%;
+			line-height: 120%;
+			color: #000;
+		}
+
+       img#headshot {
+			height: 15em;
+			float: left;
+			margin-right: 1em;
+			margin-top: .33em;
+		}
+		
+		/* Skill List */
+    
+        div#skill-lists {
+        margin-top: 1em;
+        width: 62em;
+        margin: auto;    
+}
+
+        div#skill-lists h2 {
+            margin-bottom: .66em;
+            text-align: left;
+            margin-left: .5em;
+}
+        
+      div#skill-lists ul {
+         position: relative;
+          top: -3em;
+          left: 13em;
+          width: 48em;
+}
+
+      div#skill-lists ul h3 {
+            font-family: "Raleway", sans-serif;
+            font-weight: 800;
+            font-size: 1.5em; 
+            
+         }
+        
+       div#skill-lists ul li {
+            display: inline-block;
+            padding: 0;
+            position: relative;
+            top: -1.85em;
+            left: 9em;
+            font-weight: 100;
+        }
+
+        div#skill-lists ul li:hover {
+            color:darkslateblue;
+}
+        div#skill-lists ul li::after {
+            content: " \2666";
+    
+        }
+
+        div#skill-lists ul li:last-child:after {
+            content: " ";
+        }  
+
+        /*@media screen and (max-width: 999px) and (min-width: 751px) {
+            
+        div#skill-lists {
+        width: 60em;
+        position: relative;
+        left: 0;
+        padding: 0;
+          
+}    
+        
+        div#skill-lists h2 {
+       margin: auto;
+        width: 6em;    
+       }
+            
+        div#skill-lists ul {
+         position: relative;
+         top: 0em;
+         padding: 0;    
+            
+         
+            
+}    
+                
+            }*/
+		
+		@media screen and (max-width:750px) and (min-width: 500px){
+			
+		img#headshot {
+			height: 15em;
+			margin: auto;
+			display: block;
+			float: none;
+		}
+		
+		#bio {
+			/*width: 75em;*/
+			width: 100%;
+			margin: auto;
+			margin-top: 1em;
+			display: block;
+			column-count: 1;
+		}
+		
+		#bio p {
+			width: 90%;
+			margin: auto;
+			margin-top: 1em;
+			
+		}
+    } 
+		
+       
+		
+		@media screen and (max-width: 499px){
+			
+			img#headshot {
+			height: 15em;
+			margin: auto;
+			display: block;
+			float: none;
+		}
+			
+			#bio {
+			/*width: 75em;*/
+			width: 100%;
+			margin: auto;
+			margin-top: 1em;
+			column-count: 1;
+		}
+		
+			
+			#bio p {
+			width: 95%;
+			margin: auto;
+			margin-top: 1em;	
+			
+		}
+            #
+		}

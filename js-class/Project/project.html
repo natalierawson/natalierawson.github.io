@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+    <head>
+        <title>JS Project Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+        <link href="project.css" rel="stylesheet" type="text/css">
+		<link href="jquery-ui.min.css" rel="stylesheet" type="text/css">
+		<link href="../../fixednav.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../projectdialog.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display+SC" rel="stylesheet">
+		<style>
+			
+		</style>
+        <script>
+            $(document).ready(function (){
+				$('#name').focus();
+				
+			$('#contactform').submit(function(){
+				var emailRegEx = new RegExp(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+[.]{1}(com|net|org)$/);
+				var formEmail = $('#email').val();
+				var valid = emailRegEx.test(formEmail);
+					if(!valid){
+						alert('Please enter a valid email address.');
+						$('#email').focus();
+						return false;
+					
+					}
+				
+				}); // end submit
+				
+				
+                var stagePic = new Image();
+                stagePic.src = 'hamilton_h.jpg';    
+                var albumPic = $('#hamilton img').attr('src');
+                $('#hamilton img').hover(function() {
+                    $(this).attr('src', stagePic.src);
+                },
+                function() {
+                    $(this).attr('src', albumPic);
+                }); // rollover image
+				
+				$('#mainNav').menu({
+					position: {
+						my: 'center top',
+						at: 'center bottom'
+					},
+					icons: {
+						submenu: 'ui-icon-triangle-1-s'
+					}
+				}); //menu
+            }); //ready
+        </script>
+    </head>
+    <body>
+		<nav class="fixed-nav-bar">
+			<ul>
+				<li><a>Natalie Aldrich</a></li>
+				<li><a href="../../index.html">Back to Project List</a></li>
+			</ul>
+	    </nav>
+		<div id="aboutproj">
+			<a id="close">X</a>
+			<h1 id="js-heading">Javascript Project</h1>
+		<p>This project was for my Javascript and jQuery class at UMass Lowell in Summer 2016. The assignment was to create a website on any topic, so I chose to make a website reviewing musicals.</p>
+		<p>The goals for the assignment were to:</p>
+		<ol>
+			<li>Use rollover images (I used both CSS and jQuery solutions).</li>
+			<li>Include a form.</li>
+			<li>Implement a dropdown menu.</li>
+		</ol>		
+		</div>	
+       <a href="project.html">
+		 <header>
+            <h1>!PLAYBILL</h1>
+            <p>if (likesMusicals == true)</p>
+        </header>
+	  </a>
+       <ul id="mainNav">
+				<li><a href="../index.html">Back to JS Index</a></li>
+				
+		   		<li><a href="reviews.html">All Reviews</a> 
+			   		<ul>
+						<li><a href="reviews.html#hamrev">Hamilton</a></li>
+						<li><a href="reviews.html#woodsrev">Into the Woods</a></li>
+						<li><a href="reviews.html#kingrev">The King and I</a></li>
+						<li><a href="reviews.html#dollyrev">Hello, Dolly!</a></li>
+						<li><a href="reviews.html#phanrev">Phantom</a></li>
+						<li><a href="reviews.html#shrekrev">Shrek</a></li>
+					</ul>
+		   		</li>
+				<li><a>My Collaboratory</a>
+					<ul>
+						<li><a href="to-the-trash.html">Drag and Drop Tutorial</a></li>
+						<li><a href="myplaylist.html">Sorting Tutorial</a></li>
+					</ul>
+		   		</li>
+			</ul>
+       
+		    <section id="shows">
+            <h2>Shows</h2>
+            <section id="hamilton">
+                <a href="reviews.html#hamrev"><img src="hamilton.jpg"></a>
+               
+                <p>Hamilton (2015)</p>
+            </section>
+           <section id="woods">
+                <a href="reviews.html#woodsrev"><img src="woods.jpg"><img src="woods_h.jpg"></a>
+             
+               <p>Into the Woods (1987)</p>
+            </section>
+           <section id="king">
+                <a href="reviews.html#kingrev"><img src="king.jpg"><img src="king_h.jpg" ></a>
+             
+               <p>The King and I (1977) </p>
+            </section>
+             <section id="dolly">
+                <a href="reviews.html#dollyrev"><img src="dolly.jpeg" ><img src="dolly_h.png"></a>
+                
+                 <p>Hello, Dolly! (1969)</p>
+            </section>
+             <section id="phantom">
+                <a href="reviews.html#phanrev"><img src="phantom.jpg"><img src="phantom_h.png"></a>
+                
+                 <p>Phantom (1991)</p>
+            </section>
+             <section id="shrek">
+                <a href="reviews.html#shrekrev"><img src="shrek.jpg"><img src="shrek_h.png" ></a>
+                 
+                 <p>Shrek (2009)</p>
+            </section>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contactform" name="contactform">
+				<label for="name" class="name">Name</label>
+                <input type="text" name="name" id="name" required class="required" title="Please enter your name." placeholder="ex. Alexander Hamilton">
+                <label for="email" class="label">Email</label>
+                <input type="text" name="email" id="email"  required class="required" title="Please enter your email address." placeholder="ex. fantome@operadeparis.fr">
+                 <label for="reqbox" class="label">Message</label>
+				<textarea name="reqbox" id="reqbox" placeholder="ex. REVIEW HIGH SCHOOL MUSICAL. (you monster.)"></textarea>
+                <input type="submit" value="submit" name="submit" id="submit">
+            </form>
+        </section>
+		
+        <footer>
+        </footer>
+    </body>
+</html>

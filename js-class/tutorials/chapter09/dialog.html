@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello World</title>
+<link href="jquery-ui.min.css" rel="stylesheet">
+<link href="ui-lightness/jquery-ui.min.css" rel="stylesheet">    
+<link href="../_css/site.css" rel="stylesheet">
+<link href="../../../fixednav.css" rel="stylesheet" type="text/css">	
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#hello').dialog({
+    modal: true,
+    resizable: false,
+    draggable: false,
+    hide: 'explode'  
+  }); //end dialog
+}); // end ready
+</script>>
+</head>
+<body>
+<nav class="fixed-nav-bar">
+			<ul>
+				<li><a>Natalie Aldrich</a></li>
+				<li><a href="../index.html">Back to Project List</a></li>
+				<li><a href="../../index.html">Back to JS Index</a></li>
+			</ul>
+	    </nav>		
+<div class="wrapper">
+	<header>
+		JAVASCRIPT <span class="amp">&amp;</span> jQUERY: THE&nbsp;MISSING&nbsp;MANUAL 
+	</header>
+	<div class="content">
+		<div class="main">
+			<h1>Hello World</h1>
+			<p>Notice that the dialog box looks so much better than an Alert!</p>
+			<div id="hello" title="Hello World!">
+				<p>This dialog box is actually a div, that's placed on the page using absolute positioning.</p>
+				<p>Try dragging the dialog around the screen. You can!</p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>JavaScript &amp; jQuery: The Missing Manual, 3rd Edition, by <a href="http://sawmac.com/">David McFarland</a>. Published by <a href="http://oreilly.com/">O'Reilly Media, Inc</a>.</p>
+	</footer>
+</div>
+</body>
+</html>

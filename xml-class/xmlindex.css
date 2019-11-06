@@ -1,0 +1,74 @@
+		body {
+			background:url(snowybranch-picmonk.jpg) no-repeat top center fixed;
+			background-size: 80em;	
+			}
+		
+			
+			#xmlheader {
+               margin-top: 3em;
+        
+           		padding: 1em 0;
+               width: 100%;
+               text-align: center;
+               background: white;
+               border-bottom-right-radius: 4em 1.5em;
+               border-bottom-left-radius: 4em 1.5em;
+               -moz-box-shadow: rgba(51, 51, 51, 0.5) .5em .3em 2em;
+               -webkit-box-shadow: rgba(51, 51, 51, 0.5)  .5em .3em 2em;
+                box-shadow: rgba(51, 51, 51, 0.5)  .5em .3em 2em; 
+            }
+            
+            
+            h1 {
+                margin: 0;
+                
+                font-family: "Bad Script", cursive;
+                letter-spacing: .01em;
+                
+            }
+			a {
+				text-decoration: none;
+			}
+			
+			#tutorials {
+				margin: auto;
+				margin-top: 3em;
+				width: 26em;
+				background: rgba(255,255,255,.5);
+				padding: 1em 3em;
+				border-radius: 1em;
+			}
+			
+			h2 {
+				font-family: "Open Sans", sans-serif;
+				margin-top: 0;
+			}
+			
+			h3 {
+				margin-top:0;
+				margin-bottom: 0;
+				font-family: "Bad Script", cursive;
+				
+			}
+			#ex-list ul, #ex-list {
+				margin: auto;
+				width: 25em;
+				padding-left: 1.2em;
+				list-style: none;
+				
+			}
+			
+			li {
+				line-height: 120%;
+				font-family: "Open Sans", sans-serif;
+			}
+			
+			h4 {
+				font-family: "Open Sans", sans-serif;
+				margin: 0;
+			}
+			
+			a:hover {
+				text-decoration: underline;
+			}
+			

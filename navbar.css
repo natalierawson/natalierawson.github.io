@@ -1,0 +1,17 @@
+      .navbar-inverse {
+			background-color:indigo;
+		}
+		
+		
+		.navbar-brand a {
+			color: white;
+		}
+		.navitem {
+			color: white;
+			margin-left:1em ;
+		}
+		
+		.navitem:hover {
+			color: white;
+			text-decoration: underline;
+		}

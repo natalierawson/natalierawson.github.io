@@ -1,0 +1,344 @@
+
+/* Page Styles*/
+
+
+/* Site Base */	
+	#framing {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background-color: #abb68b;
+		
+	}
+	#wrapper {
+		width: 815px;
+		margin: auto;
+		background-color: white;
+		margin-top: 47px;
+	}
+	
+/*Header*/
+	header{
+		height: 175px;
+		
+	}
+	
+	#dfl-logo {
+		float: left;
+		margin-left: 20px;
+	}
+	
+	#info {
+		width: 300px;
+		position: absolute;
+		margin-left: 300px;
+		margin-top: 30px;
+		
+	}
+	address {
+		font-family: "Arial", sans-serif;
+		font-size: 16px;
+		font-weight: bold;
+	
+	}
+	
+	h1 {
+		font-family: "Verdana","Arial","Helvetica", sans-serif;
+		font-weight: bold;
+		font-size: 18px;
+		margin-top: 25px;
+	
+	}
+	
+	/* Box Navigation in Header */
+	#boxnav {
+		float: right;
+		text-align: center;
+		width: 170px;
+		height: 155px;
+		background-color: #603;
+		z-index: 1;
+		margin-right: 20px;
+		margin-top: 5px;
+		
+	}
+	
+	#boxnav ul {
+		margin-top: 10px;
+	}
+	
+	#boxnav li {
+		margin-top: 7px;
+		
+	}
+	
+	#boxnav a {
+		font-family: "Arial","Helvetica", sans-serif;
+		font-size: 13px;
+		font-weight: bold;
+		color: white;
+		text-decoration: none;
+	}
+	
+	
+	/* First Row/Main Nav */
+	#first-nav {
+		height: 28px;
+		background-color: #603;
+	
+	}
+
+	#first-nav ul li {
+		display: inline-block;
+		margin-top: 1px;
+		padding: 7px 30px;		
+	}
+	
+	#first-nav ul li:not(last-child){
+		border-right: 1px solid white;
+		
+	}
+	
+	#first-nav a {
+		
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+		font-family: "Georgia","Times New Roman", serif;
+		font-style: italic;
+	}
+	
+	/* Reference Nav is handled externally via sm-yellow.css with the following exception: */
+	/* Justified alignment for  reference drop-down*/
+	@media (min-width: 768px) {
+		#ref-menu > li {
+			float: none;
+			display: table-cell;
+			width: 1%;
+			text-align: center;
+		}
+	}
+	
+/*Alters z-index of ref-menu so that it doesn't interfere with portfolio nav*/
+#ref-menu {
+	z-index: 2;
+}
+	
+	
+	/* Contains Resource Links, Buttons, and Images */
+	#main {
+		position: relative;
+		font-family: "Verdana", "Arial", sans-serif;
+	}
+	#main p {
+		font-weight: bold;
+		font-size: 16px;
+		text-align: center;
+		margin-top: 20px;
+	}
+	
+	
+	/* Button Styling */
+	#button-list {
+		position: absolute;
+		margin-top: 30px;
+		margin-left: 45px;
+	}
+	
+	.button {
+		display: block;
+		margin-bottom: 30px;
+		padding: 13px 0;
+		width: 220px;
+		border-radius: 10px;
+		background-color: #603;
+		
+		font-family: "Verdana", sans-serif;
+		/*font-weight: bold;*/
+		font-size: 16px;
+		
+		text-decoration: none;
+		color: #fff;
+		
+	}
+	
+	a.button {
+		text-align: center;
+	
+	}
+	
+	.button:hover {
+		background-color: #903;
+	}
+	
+	#renew {
+		background-color: #903;
+	}
+	
+	#renew:hover {
+		background-color: #b3003b;
+	}
+	/* Popular Resource Section */
+	
+	#db-links {
+		position: absolute;
+		margin-left: 330px;
+		
+	}
+	/* Subheadings underneath Popular Resources */
+	#list-wrap {
+		margin-top: 20px;
+	}
+	
+	#db-links h2 {
+		font-weight: bold;
+		margin-top: 30px;
+		font-size: 24px;
+		text-decoration: underline;
+		
+	}
+	
+	
+	#db-links h3 {
+		font-size: 20px;
+		font-weight: normal;
+		margin-top: 10px;
+		padding-bottom: 5px;
+		padding-left: 20px;
+		cursor: pointer;
+	}
+	
+	
+	
+	.arrow {
+		
+		float: left;
+		position: absolute;
+		margin-top: 2px;
+		height: 15px;
+		cursor: pointer;
+		
+	}
+	/* Revealed Section on Click*/
+	.resources ul {
+		font-size: 15px;
+		width: 400px;
+		list-style: none;
+	}
+	
+	.resources li {
+		margin-top: 2px;
+	}
+	
+	.resources h4 {
+		font-weight: normal;
+	}
+	
+	.list-2 {
+	position: absolute;	
+	margin-left: 230px;	
+	
+		
+	
+	}
+
+	.list-3 {
+		
+		margin-top: 15px;
+		/*text-align: center;*/
+}
+	
+	#ac-hist {
+		
+		margin-left: 200px;
+		margin-top:-50px;
+		
+}
+
+	#enc-grol {
+		margin-top: -35px;
+	}
+	
+	#gen-remote {
+		margin-top: -63px;
+	}
+	
+	/*Link of the Month Styles */
+	h3#monthlink {
+		font-size: 18px;
+		position: relative;
+		left: -20px;
+		top: 10px;
+		cursor: default;
+		font-weight: bold;
+	}
+	
+	h3#monthlink span a {
+		text-decoration: none;
+		font-weight: normal;
+	}
+	
+	h3#monthlink span a:hover {
+		text-decoration: underline;
+	}
+
+	/* Enables External Link Icon Where Relevant*/
+	
+	#button-list a:not( [href*='duxburyfreelibrary.org'] ):not( [href^='#'] ):not( [href^='/'] ):after {
+		font-family: 'FontAwesome';
+    	content: " \f08e";
+	}
+	/* Photos */
+	#gallery {
+		
+		position: relative;
+		margin-top: 550px;
+		text-align: center;
+		height: 150px;
+	}
+	
+	.pic {
+		height: 100px;
+		padding: 0 55px;
+		
+	}
+	/* Footer*/
+	footer {
+		position: relative;
+		font-family: "Arial", sans-serif;
+		margin-top: 20px;
+		font-size: 12px;
+		font-weight: normal;
+		text-align: center;
+		color: #999;
+		height: 20px;
+	}
+	
+		
+
+	footer a {
+		text-decoration: none;
+		color: #000;
+	}
+ 
+
+@media only screen and (min-height: 801px){
+	#framing {
+		position: relative;
+		width: 100%;
+		min-height: 1024px;
+		
+		
+	}
+	#wrapper {
+		height: 1024px;
+		
+		
+	}
+	
+	#gallery {
+		margin-top: 607px;
+		}
+	
+	
+	}

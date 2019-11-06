@@ -1,0 +1,191 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  
+}
+
+
+h1 {
+    font-family: cursive;
+}
+
+h2, h3, p {
+    font-family: sans-serif;
+}
+
+h1, #htmlnav ul, #htmlnav li {
+    text-align: center;
+}
+
+header {
+	background: url(headercloud.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 20px 0;
+	width: 100%;
+	margin-top: 45px;
+}
+
+#htmlnav {
+    
+    background: #2921B2;
+    padding: 15px;
+    border: 1px solid black;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+#htmlnav li {
+        display: inline-block;
+        padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#htmlnav a:hover {
+	color: #B6B2F2;
+}
+
+/* Dropdown Madness. */
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #2921B2;
+    color: white;
+    font-size: 12px;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #B6B2F2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #2921B2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color:  #2921B2;
+    color: white;
+    }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #2921B2;
+}
+main {
+	height: 500px;
+}
+#wow {
+    
+	position: relative;
+	bottom: -2.5em;
+	left: -40em;
+    
+}
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#wish {
+    padding-top: 30px;
+	float:left;
+	height: 33%;
+	width: 50%;
+	font: 1.25em;
+    
+}
+
+.wonder {
+	color: #e6ac00;
+	font-weight: bold;
+	font-family: fantasy;
+	
+}
+
+#review {
+	float: right;
+	height: 33%;
+	padding-right: 20px;
+	width: 40%; 
+}
+
+blockquote {
+    text-align: right;
+    font: 1.25em serif;
+    font-weight: bold;
+    padding: 50% 30px 0;
+	line-height: 75%;
+}
+
+blockquote span {
+    font-size: 100px;
+}
+
+.speaker {
+    text-align: right;
+    padding: 50px 20px 0;
+}
+
+
+.aboutnav {
+    
+    float: left;
+	
+    width: 20%;
+    background: transparent;
+    border: transparent;
+}
+
+.aboutnav ul {
+    list-style-type: none;
+   margin-left: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.aboutnav a {
+    color: black;
+}
+
+.aboutsect {
+    float:right;
+    width: 70%;
+    
+}
+
+.aboutsect p, .aboutsect h2 {
+    text-align: left;
+    padding: 0;
+}
+
+.watched {
+    margin: 0 auto;
+} 
