@@ -5,7 +5,7 @@
    Tutorial Case
 
    Chesterton Financial XSL Style Sheet
-   Author: Natalie Aldrich
+   Author: Natalie Rawson
    Date:   2/17/16
 
    Filename:         stock.xsl

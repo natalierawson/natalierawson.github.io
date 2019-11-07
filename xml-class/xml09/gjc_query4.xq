@@ -7,7 +7,7 @@ xquery version "1.0";
 
    Return order totals grouped by store
 
-   Author: Natalie Aldrich     
+   Author: Natalie Rawson     
    Date:     3/21/16  
 
    Filename:   gjc_query4.xq

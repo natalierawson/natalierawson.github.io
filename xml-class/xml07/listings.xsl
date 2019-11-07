@@ -5,7 +5,7 @@
    Tutorial Case
 
    Real Estate Listings Style Sheet
-   Author: Natalie Aldrich
+   Author: Natalie Rawson
    Date:   3/04/16
 
    Filename:         listings.xsl

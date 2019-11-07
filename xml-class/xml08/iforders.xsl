@@ -5,7 +5,7 @@
    Tutorial Case
 
    Illuminated Fixtures Orders Style Sheet
-   Author: Natalie Aldrich
+   Author: Natalie Rawson
    Date:   3/16/16
 
    Filename:         iforders.xsl

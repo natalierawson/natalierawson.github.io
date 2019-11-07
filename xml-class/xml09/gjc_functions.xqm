@@ -12,7 +12,7 @@ declare variable $gjc:products := doc('gjc_products.xml')//product;
 
    Library Module for Green Jersey Cycling
 
-   Author:  Natalie Aldrich   
+   Author:  Natalie Rawson   
    Date:       3/21/16
 
    Filename:   gjc_functions.xqm

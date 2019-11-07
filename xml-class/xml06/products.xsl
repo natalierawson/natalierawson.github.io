@@ -5,7 +5,7 @@
    Tutorial Case
 
    Harpe Gaming Products Style Sheet
-   Author: Natalie Aldrich
+   Author: Natalie Rawson
    Date:   2/24/16
 
    Filename:         products.xsl

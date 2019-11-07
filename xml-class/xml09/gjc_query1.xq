@@ -7,7 +7,7 @@ xquery version "1.0";
 
    General query on stores and cities
 
-   Author: Natalie Aldrich    
+   Author: Natalie Rawson    
    Date:       3/21/16
 
    Filename:   gjc_query1.xq

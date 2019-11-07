@@ -7,7 +7,7 @@ xquery version "1.0";
 
    Query on large customer orders
 
-   Author: Natalie Aldrich   
+   Author: Natalie Rawson   
    Date:       3/21/16
 
    Filename:   gjc_query2.xq

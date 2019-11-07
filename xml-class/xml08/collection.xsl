@@ -5,7 +5,7 @@
    Tutorial Case
 
    Style Sheet to Collate Shipping Documents
-   Author: Natalie Aldrich
+   Author: Natalie Rawson
    Date:   3/8/16
    Filename:         collection.xsl
    Supporting Files: 

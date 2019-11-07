@@ -5,7 +5,7 @@
    Tutorial Case
 
    Harpe Gaming Library of Templates Style Sheet
-   Author: Natalie Aldrich
+   Author: Natalie Rawson
    Date:   2/24/16
 
    Filename:         hglibrary.xsl

@@ -7,7 +7,7 @@ xquery version "1.0";
 
    Return total revenue grouped by department
 
-   Author: Natalie Aldrich    
+   Author: Natalie Rawson    
    Date:       3/21/16
 
    Filename:   gjc_query5.xq

@@ -8,7 +8,7 @@ xquery version "1.0";
    Return total revenue grouped by department with 
    a user-defined function
 
-   Author:  Natalie Aldrich   
+   Author:  Natalie Rawson   
    Date:       3/21/16
 
    Filename:   gjc_query6.xq

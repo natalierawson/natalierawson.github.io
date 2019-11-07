@@ -7,7 +7,7 @@ xquery version "1.0";
 
    Query to calculate total revenue from all orders
 
-   Author:  Natalie Aldrich   
+   Author:  Natalie Rawson   
    Date:       3/21/16
 
    Filename:   gjc_query3.xq
