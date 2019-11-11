@@ -1,14 +1,19 @@
 	/*CSS for Main Site and Web Skills Part of Site*/
-	body {
+	/*body {
 			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000114+0,0f0054+49,0f0054+49,5f0077+83,cc2e85+100 */
-background: rgb(0,1,20); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(0,1,20,1) 0%, rgba(15,0,84,1) 49%, rgba(15,0,84,1) 49%, rgba(95,0,119,1) 83%, rgba(204,46,133,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(0,1,20,1) 0%,rgba(15,0,84,1) 49%,rgba(15,0,84,1) 49%,rgba(95,0,119,1) 83%,rgba(204,46,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(0,1,20,1) 0%,rgba(15,0,84,1) 49%,rgba(15,0,84,1) 49%,rgba(95,0,119,1) 83%,rgba(204,46,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', endColorstr='#cc2e85',GradientType=0 ); /* IE6-9 */
-		width: 100%;
-		overflow-x: auto;
+/*background: rgb(0,1,20); /* Old browsers */
+/*background: -moz-linear-gradient(top, rgba(0,1,20,1) 0%, rgba(15,0,84,1) 49%, rgba(15,0,84,1) 49%, rgba(95,0,119,1) 83%, rgba(204,46,133,1) 100%); /* FF3.6-15 */
+/*background: -webkit-linear-gradient(top, rgba(0,1,20,1) 0%,rgba(15,0,84,1) 49%,rgba(15,0,84,1) 49%,rgba(95,0,119,1) 83%,rgba(204,46,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
+/*background: linear-gradient(to bottom, rgba(0,1,20,1) 0%,rgba(15,0,84,1) 49%,rgba(15,0,84,1) 49%,rgba(95,0,119,1) 83%,rgba(204,46,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', endColorstr='#cc2e85',GradientType=0 ); /* IE6-9 */
+/*		width: 100%;
+		overflow-x: auto;*/
 		
+		/*}*/
+
+		body{
+			background: url(backgroundimgs/starrylightblue.jpg) no-repeat center center fixed;
+			
 		}
 		
 
