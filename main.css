@@ -20,7 +20,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 		}
 
 		nav a {
-			color: #a3faff;
+			color: #000080;
 		}
 
 		.navbar-brand{
@@ -70,7 +70,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 		}
 
 		p{
-			color: white; 
+			color: black; 
 		}
 		
 		#toggledContent a{
@@ -80,6 +80,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 		#toggledContent a:hover {
 			color: #ffedaa;
 			transition: color .5s ease;
+		}
+
+		#site-container {
+			background: rgba(255,255,255,.4);
+			margin: 20px;
+			border-radius: 10px;
+
+		}
+
+		#projects-container {
+			padding-bottom: 20px;
 		}
 
 		#projects {
@@ -95,10 +106,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 
 		}
 
+		#skills-container {
+			background: rgba(0, 89, 179, .3);
+
+		}
+
 		#skills {
 			display: flex;
 			justify-content: space-around;
-			background: rgba(255,255,255,.2);
+			
 			
 		}
 
@@ -144,6 +160,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 	    #about {
 	    	width: 80%;
 	    	margin: auto;
+	    	padding-bottom: 20px;
 	    }
 
 	    footer nav {
