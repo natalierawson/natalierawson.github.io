@@ -163,6 +163,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 	    	padding-bottom: 20px;
 	    }
 
+
+
+	    img#headshot {
+			border-radius: 50%;
+			height: 15em;
+  			
+  			margin: 0 30px;
+  			float: left;
+  			
+		}
+
+		.techedit {
+	    	 -webkit-filter: saturate(1.3) brightness(1.2) grayscale(80%);
+  			filter: saturate(1.3) brightness(1.2) grayscale(80%);
+  			transform: rotate(-5deg);
+  			height: 13em;
+	    }
+
+	    #about p a {
+	    	color:  #0059b3;
+	    }
+
+	    #about p a:hover {
+	    	color:#000080;
+	    }
+
 	    footer nav {
 	    	display: flex;
 	    	justify-content: center;
@@ -254,6 +280,61 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 				margin-left: 40px;
 			}
 
+		}
+
+		@media screen and (max-width:750px) and (min-width: 500px){
+			
+		img#headshot {
+			height: 15em;
+			margin: auto;
+			display: block;
+			float: none;
+		}
+		
+		#bio {
+			/*width: 75em;*/
+			width: 100%;
+			margin: auto;
+			margin-top: 1em;
+			display: block;
+			column-count: 1;
+		}
+		
+		#bio p {
+			width: 90%;
+			margin: auto;
+			margin-top: 1em;
+			
+		}
+    } 
+		
+       
+		
+		@media screen and (max-width: 499px){
+			
+			img#headshot {
+			height: 15em;
+			margin: auto;
+			display: block;
+			float: none;
+		}
+			
+			#about {
+			/*width: 75em;*/
+			width: 100%;
+			margin: auto;
+			margin-top: 1em;
+			column-count: 1;
+		}
+		
+			
+			#about p {
+			width: 95%;
+			margin: auto;
+			margin-top: 1em;	
+			
+		}
+            
 		}
 
 		
