@@ -20,7 +20,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 		}
 
 		nav a {
-			color: #000080;
+			color: #99d6ff;
 		}
 
 		.navbar-brand{
@@ -42,7 +42,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 
 		h2 {
 			font-size: 50px;
-			color: #0059b3;
+			color: #ffedaa;
 			text-align: center;
 			padding: 50px 0;
 			
@@ -83,14 +83,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 		}
 
 		#site-container {
-			background: rgba(255,255,255,.4);
-			margin: 20px;
-			border-radius: 10px;
+			background: rgba(255,255,255,.08);
+			
+			
 
 		}
 
 		#projects-container {
 			padding-bottom: 20px;
+			/*background: rgba(0,0, 0, .2);*/
 		}
 
 		#projects {
@@ -106,14 +107,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 
 		}
 
-		#skills-container {
-			background: rgba(0, 89, 179, .3);
-
+		#projects nav a:hover {
+			color: #ffedaa;
 		}
+
+		/*#skills-container {
+			background: rgba(0,0, 0, .2);
+
+		}*/
 
 		#skills {
 			display: flex;
 			justify-content: space-around;
+
 			
 			
 		}
@@ -124,8 +130,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 			list-style-type: none;
 			justify-content: space-around;
 
-			
-		}
+			}
 
 		#basics {
 			width: 150px;
@@ -158,11 +163,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 		}
 
 	    #about {
-	    	width: 80%;
+	    	width: 100%;
 	    	margin: auto;
 	    	padding-bottom: 20px;
+	    	background: white;
 	    }
 
+	    #about-container {
+	    	margin: 0 10%;
+	    	
+	    }
+	    #about p {
+	    	line-height: 2.5;
+	    }
+
+	    #about h2 {
+	    	color: #0047b3;
+	    
+	    }
 
 
 	    img#headshot {
@@ -189,10 +207,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 	    	color:#000080;
 	    }
 
+	    footer {
+	    	padding: 10px 0;
+	    }
+
 	    footer nav {
 	    	display: flex;
 	    	justify-content: center;
 	    	height: 70px;
+	    	
+	    	left: 0;
+	    	bottom: 0;
+	    	width: 100%;
 	    }
 
 	    footer nav a {
