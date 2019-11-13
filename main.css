@@ -9,7 +9,7 @@ background: linear-gradient(to bottom, rgba(0,1,20,1) 0%,rgba(15,0,84,1) 49%,rgb
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', endColorstr='#cc2e85',GradientType=0 ); /* IE6-9 */
 		width: 100%;
 		overflow-x: auto;
-			background: url(backgroundimgs/starrylightblue.jpg) no-repeat center center fixed;
+			background: url(backgroundimgs/starrydeepblue.png) no-repeat center center fixed;
 			
 		}
 		
@@ -200,24 +200,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 	    }
 
 
-		@media (max-width: 765px) and (min-width: 700px) {
+		@media (max-width: 750px) and (min-width: 710px) {
 			#projects {
 				flex-direction: column;
-				height: 300px;
+				height: 250px;
 				flex-wrap: wrap;
 				justify-content: flex-start;
-				padding-left: 25%;
+				/*padding:  0 15%;*/
+				text-align: center;
 
 			}
-
-			#projects nav {
-				padding-bottom: 20px;
-			}
-
 		}
 
+		/*@media (max-width: 709px) {
+			#projects-container h2 {
+				text-align: left;
+				padding-left: 3%;
+			}
+		}*/
 
-		@media (max-width: 699px) and (min-width: 535px){
+
+		@media (max-width: 693px) and (min-width: 595px){
 			#projects {
 				flex-direction: column;
 				height: 300px;
@@ -231,7 +234,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 				width: 100%;
 				padding-bottom: 20px;
 				padding-left: 20px;
-				text-align: center;
+				text-align: left;
 
 			}
 
@@ -240,10 +243,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 				width: 100%;
 				text-align: center;
 			}
-			/*.too-long {
-			width: 280px;
-			text-align: center;
-		}*/
+			.too-long {
+			width: 80%;
+			
+		}
 
 		}
 		
@@ -311,6 +314,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
        
 		
 		@media screen and (max-width: 499px){
+
+			#site-container {
+				min-width: 400px;
+			}
 			
 			img#headshot {
 			height: 15em;
