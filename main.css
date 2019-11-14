@@ -229,18 +229,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 	    	color: #ffedaa;
 	    }
 
-	    @media(min-width: 768px) and (max-width: 1024px) {
+	 @media(min-width: 768px) and (max-width: 1024px) {
 	    	#projects {
 	    		text-align: center;
 	    	}
 
+	    	#skills {
+	    		margin-top: -30px;
+	    	}
+
 	    	#skills ul li {
-	    		width: 100px;
+	    		width: 70px;
 	    	}
 
 	    	#skills ul li img {
 
-				height: 90px;
+				height: 70px;
 
 			}
 
@@ -248,11 +252,60 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 				margin-left: -10px;
 			}
 
-			#skills ul, #basics, #assembly, #adobe, #additional {
-				width: 10px;
-			}
+			
 	    }
 
+	    @media (min-width: 427px) and (max-width: 767px){
+
+			#projects {
+				flex-direction: column;
+				height: 300px;
+				width: 350px;
+				margin: auto;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+			}
+
+
+
+			#projects nav {
+				width: 100%;
+				padding-bottom: 20px;
+
+				
+			}
+
+			#projects nav a {
+				width: 190px;
+				padding-bottom: 10px;
+				padding-right:0px;
+			}
+
+			h3 {
+				margin: auto;
+				
+				
+			}
+
+			#skills{
+				
+				margin-top: -30px;
+			}
+
+			#skills ul li {
+				width: 60px;
+			}
+
+			#skills ul li img {
+				height: 65px;
+			}
+
+			#html5 {
+				margin-left: -5px;
+			}
+
+
+	    }
 
 	    @media (min-width: 400px) and (max-width: 426px) {
 	    	
@@ -266,7 +319,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 
 	    }
 
-	    @media (min-width: 320px) and (max-width: 399px) {
+	    @media (min-width: 260px) and (max-width: 399px) {
 	    	#skills ul li img {
 
 				height: 55px;
@@ -276,7 +329,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 	    }
 
 	   
-		@media (min-width: 320px) and (max-width: 426px) {
+		@media (min-width: 260px) and (max-width: 426px) {
 			
 			#projects {
 				flex-direction: column;
