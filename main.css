@@ -229,6 +229,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 	    	color: #ffedaa;
 	    }
 
+	    @media(min-width: 768px) and (max-width: 1024px) {
+	    	#projects {
+	    		text-align: center;
+	    	}
+
+	    	#skills ul li {
+	    		width: 100px;
+	    	}
+
+	    	#skills ul li img {
+
+				height: 90px;
+
+			}
+
+			#html5 {
+				margin-left: -10px;
+			}
+
+			#skills ul, #basics, #assembly, #adobe, #additional {
+				width: 10px;
+			}
+	    }
 
 
 	    @media (min-width: 400px) and (max-width: 426px) {
@@ -238,6 +261,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 				height: 60px;
 
 			}
+
+
 
 	    }
 
