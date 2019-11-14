@@ -229,7 +229,88 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 	    	color: #ffedaa;
 	    }
 
-	 @media(min-width: 768px) and (max-width: 1024px) {
+
+	 @media (min-width: 1920px) {
+
+	 	a {
+	 		font-size: 1.5rem;
+	 	}
+
+	 	.navbar-brand {
+	 		font-size: 5rem;
+	 	}
+
+	 	h2 {
+	 		font-size:5rem;
+	 	}
+
+	 	h3 {
+	 		font-size: 3rem;
+	 	}
+
+	 	img#headshot {
+	 		height: 20rem;
+	 	}
+
+	 	#projects nav a {
+	 			font-size: 1.5rem;
+	 		}
+
+
+	 	#skills ul {
+	 		width: 350px;
+	 	}
+
+	 	#skills ul li {
+	    		width: 150px;
+	    		
+	    		
+	    	}
+	 		
+	    #skills ul li img {
+
+				height: 100px;
+				
+
+			}
+
+		#html5 {
+				margin-left: -10px;
+			}	
+
+
+
+	 	#about p {
+	 		font-size: 1.5rem;
+	 	}
+	 } 
+
+	 @media (min-width: 1441px) and (max-width: 1919px) {
+
+	 	#projects nav a {
+	 			font-size: 1.25rem;
+	 		}
+
+	 		#skills ul li {
+	    		width: 60px;
+	    		
+	    	}
+	 		
+	    	#skills ul li img {
+
+				height: 100px;
+				padding: 20px;
+
+			}
+
+			#html5 {
+				margin-left: -10px;
+			}	
+
+	 }  
+
+
+	 @media(min-width: 768px) and (max-width: 1440px) {
 	    	#projects {
 	    		text-align: center;
 	    	}
@@ -254,6 +335,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 
 			
 	    }
+
+
+
 
 	    @media (min-width: 427px) and (max-width: 767px){
 
