@@ -9,9 +9,24 @@ background: linear-gradient(to bottom, rgba(0,1,20,1) 0%,rgba(15,0,84,1) 49%,rgb
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', endColorstr='#cc2e85',GradientType=0 ); /* IE6-9 */
 		/*width: 100%;*/
 		/*overflow-x: auto;*/
-			background: url(backgroundimgs/starrydeepblue.png) no-repeat center center fixed;
 			
 		}
+
+		body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(backgroundimgs/starrydeepblue.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 		
 
@@ -214,100 +229,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 	    	color: #ffedaa;
 	    }
 
-	    @media screen and (max-width:750px) and (min-width: 500px){
+
+
+	    @media (min-width: 400px) and (max-width: 426px) {
+	    	
+			#skills ul li img {
+
+				height: 60px;
+
+			}
+
+	    }
+
+	    @media (min-width: 320px) and (max-width: 399px) {
+	    	#skills ul li img {
+
+				height: 55px;
+
+			}
+
+	    }
+
+	   
+		@media (min-width: 320px) and (max-width: 426px) {
 			
-		img#headshot {
-			height: 15em;
-			margin: auto;
-			display: block;
-			float: none;
-		}
-		
-		#bio {
-			/*width: 75em;*/
-			width: 100%;
-			margin: auto;
-			margin-top: 1em;
-			display: block;
-			column-count: 1;
-		}
-		
-		#bio p {
-			width: 90%;
-			margin: auto;
-			margin-top: 1em;
-			
-		}
-    } 
-
-
-		@media (max-width: 750px) and (min-width: 710px) {
-			#projects {
-				flex-direction: column;
-				height: 250px;
-				flex-wrap: wrap;
-				justify-content: flex-start;
-				/*padding:  0 15%;*/
-				text-align: center;
-
-			}
-		}
-
-		/*@media (max-width: 709px) {
-			#projects-container h2 {
-				text-align: left;
-				padding-left: 3%;
-			}
-		}*/
-
-
-		@media (max-width: 693px) and (min-width: 595px){
-			#projects {
-				flex-direction: column;
-				height: 300px;
-				flex-wrap: wrap;
-				justify-content: flex-start;
-			}
-
-
-
-			#projects nav {
-				width: 100%;
-				padding-bottom: 20px;
-				padding-left: 20px;
-				text-align: left;
-
-			}
-
-			h3 {
-				
-				width: 100%;
-				text-align: center;
-			}
-			.too-long {
-			width: 80%;
-			
-		}
-
-		}
-		
-
-		@media (min-width: 320px) and (max-width: 534px) {
-			body:before {
-  content: "";
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  background: url(backgroundimgs/starrydeepblue.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 			#projects {
 				flex-direction: column;
 				height: 300px;
@@ -323,31 +268,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 				width: 100%;
 				padding-bottom: 20px;
 
-				text-align: left;
-
+				
 			}
 
 			#projects nav a {
 				width: 190px;
 				padding-bottom: 10px;
+				padding-right:0px;
 			}
 
 			h3 {
+				margin: auto;
+				width: 25%;
+				text-align: center;
 				
-				width: 100%;
-				text-align: left;
-				margin-left: 40px;
 			}
 
-			
-
-		}
-
-		
-		
-       
-		
-		@media screen and (min-width: 320px) and (max-width: 520px){
 			
 
 			#site-container {
@@ -363,12 +299,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 				width: 100px;
 			}
 
-			#skills ul li img {
-
-				height: 55px;
-
-			}
-
+			
 		
 			img#headshot {
 			height: 15em;
@@ -393,9 +324,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 			
 		}
             
-		}
-
-		@media screen and (max-width: 320px) {
 			.navbar-brand {
 				font-size: 2rem;
 			}
