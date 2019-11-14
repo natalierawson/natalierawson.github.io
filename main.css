@@ -1,17 +1,18 @@
 	/*CSS for Main Site and Web Skills Part of Site*/
 	
 		body{
-			 Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000114+0,0f0054+49,0f0054+49,5f0077+83,cc2e85+100 */
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000114+0,0f0054+49,0f0054+49,5f0077+83,cc2e85+100 */
 background: rgb(0,1,20); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(0,1,20,1) 0%, rgba(15,0,84,1) 49%, rgba(15,0,84,1) 49%, rgba(95,0,119,1) 83%, rgba(204,46,133,1) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, rgba(0,1,20,1) 0%,rgba(15,0,84,1) 49%,rgba(15,0,84,1) 49%,rgba(95,0,119,1) 83%,rgba(204,46,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, rgba(0,1,20,1) 0%,rgba(15,0,84,1) 49%,rgba(15,0,84,1) 49%,rgba(95,0,119,1) 83%,rgba(204,46,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', endColorstr='#cc2e85',GradientType=0 ); /* IE6-9 */
-		width: 100%;
-		overflow-x: auto;
+		/*width: 100%;*/
+		/*overflow-x: auto;*/
 			background: url(backgroundimgs/starrydeepblue.png) no-repeat center center fixed;
 			
 		}
+
 		
 
 		h1,h2,h3, .navbar-brand {
@@ -129,38 +130,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 			flex-wrap: wrap-reverse;
 			list-style-type: none;
 			justify-content: space-around;
-
-			}
-
-		#basics {
-			width: 150px;
-
-		}
-
-		#additional {
 			width: 200px;
 		}
 
-		#assembly {
-			width: 200px;
-		}
-
-		#adobe {
-			width: 200px;
-		}
 
 
 
 	    #skills ul li img{
 	    	height: 75px;
-	    	padding: 10px 0 ;
+	    	padding: 10px 0;
 
 	    }
 
-	    #adobe img {
+	   /* #adobe img {
 			height: 57px;
 			width: 54px;
-		}
+		}*/
 
 	    #about {
 	    	width: 100%;
@@ -214,7 +199,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 	    footer nav {
 	    	display: flex;
 	    	justify-content: center;
-	    	height: 70px;
+	    	/*height: 70px;*/
 	    	
 	    	left: 0;
 	    	bottom: 0;
@@ -228,6 +213,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 	    footer nav a:hover {
 	    	color: #ffedaa;
 	    }
+
+	    @media screen and (max-width:750px) and (min-width: 500px){
+			
+		img#headshot {
+			height: 15em;
+			margin: auto;
+			display: block;
+			float: none;
+		}
+		
+		#bio {
+			/*width: 75em;*/
+			width: 100%;
+			margin: auto;
+			margin-top: 1em;
+			display: block;
+			column-count: 1;
+		}
+		
+		#bio p {
+			width: 90%;
+			margin: auto;
+			margin-top: 1em;
+			
+		}
+    } 
 
 
 		@media (max-width: 750px) and (min-width: 710px) {
@@ -282,9 +293,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 		
 
 		@media (max-width: 534px) {
+		
 			#projects {
 				flex-direction: column;
-				height: 450px;
+				height: 300px;
 				width: 350px;
 				margin: auto;
 				flex-wrap: wrap;
@@ -313,42 +325,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 				margin-left: 40px;
 			}
 
+			
+
 		}
 
-		@media screen and (max-width:750px) and (min-width: 500px){
-			
-		img#headshot {
-			height: 15em;
-			margin: auto;
-			display: block;
-			float: none;
-		}
 		
-		#bio {
-			/*width: 75em;*/
-			width: 100%;
-			margin: auto;
-			margin-top: 1em;
-			display: block;
-			column-count: 1;
-		}
-		
-		#bio p {
-			width: 90%;
-			margin: auto;
-			margin-top: 1em;
-			
-		}
-    } 
 		
        
 		
-		@media screen and (max-width: 499px){
+		@media screen and (max-width: 520px){
+			
 
 			#site-container {
-				min-width: 400px;
+				width: 100%;
+				overflow-x: hidden;
 			}
-			
+
+			#skills{
+				margin-right: 40px;
+			}
+
+			#skills ul {
+				width: 100px;
+			}
+
+			#skills ul li img {
+
+				height: 55px;
+
+			}
+
+		
 			img#headshot {
 			height: 15em;
 			margin: auto;
@@ -372,6 +379,58 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 			
 		}
             
+		}
+
+		@media screen and (max-width: 320px) {
+			.navbar-brand {
+				font-size: 2rem;
+			}
+
+			h2 {
+				font-size: 2rem;
+				padding: 10px;
+
+
+			}
+
+			h3 {
+				font-size: 1.5rem;
+				margin-left: 130px;
+				
+				padding-bottom: .5rem;
+			}
+
+			#projects {
+				flex-wrap: nowrap;
+				height: 25rem;
+				margin: auto;
+
+			}
+
+			#projects nav {
+				margin: auto;
+				
+			}
+
+
+			#projects nav a {
+				font-size: .75rem;
+				text-align: center;
+				width: 100%;
+			}
+
+
+			img#headshot {
+				height: 7rem;
+			}
+
+			#about p {
+				font-size: .75rem;
+			}
+
+			footer a {
+				font-size: .75rem;
+			}
 		}
 
 		
