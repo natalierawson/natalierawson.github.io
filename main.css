@@ -292,7 +292,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 		}
 		
 
-		@media (max-width: 534px) {
+		@media (min-width: 320px) and (max-width: 534px) {
 		
 			#projects {
 				flex-direction: column;
@@ -333,7 +333,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 		
        
 		
-		@media screen and (max-width: 520px){
+		@media screen and (min-width: 320px) and (max-width: 520px){
 			
 
 			#site-container {
