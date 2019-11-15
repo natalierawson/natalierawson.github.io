@@ -1,4 +1,7 @@
 
+body {
+		overflow-x: hidden;
+	}
 
 #site-container {
 	background: rgba(25, 60, 100,.5);
@@ -51,4 +54,39 @@
 	color:white;
 	line-height: 2;
 
+}
+
+@media (max-width: 426px) {
+
+	#bio-container {
+		padding: 0;
+		width: 80%;
+		margin:auto;
+
+	}
+
+
+	#headshot {
+		float: none;
+		display: block;
+		margin: auto;
+	}
+
+	#bio-container p {
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	#demo-container, #demo-container h2, #perf-links h2{
+		text-align: center;
+	}
+
+	#perf-links {
+		padding-bottom: 20px;
+	}
+
+	#perf-links a {
+		margin: auto;
+		width: 54%;
+	}
 }		
