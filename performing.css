@@ -5,6 +5,7 @@ body {
 
 #site-container {
 	background: rgba(25, 60, 100,.5);
+	overflow-x: hidden;
 }
 
 #bio-container h2 {
@@ -56,25 +57,129 @@ body {
 
 }
 
-@media (max-width: 426px) {
+
+
+
+
+/* This little piggy is for iPad Pro.*/
+@media (width: 1024px) and (height: 1366px) {
+	#site-container {
+		height: 90vh;
+	}
+	body {
+		overflow-y: hidden;
+	}
+}
+
+/*This little piggy is for the big boys*/
+
+@media (min-width: 1920px) {
+	#site-container {
+		overflow-x: hidden;
+	}
+
+	#demo-desc {
+		font-size: 1.5rem;
+	}
+
+	#second-half {
+		padding-top: 33vh;
+		padding-left: 250px;
+	}
+
+	img#headshot {
+		float: none;
+		margin: auto;
+		padding-bottom: 10px;
+	}
+
+	
+
+	#bio{
+		/*padding-right: 30px;
+		padding-left: 100px;*/
+		
+	}
+
+	#bio p {
+		font-size: 1.5rem;
+	}
+}
+
+/* This little piggy is for the computers*/
+
+@media (min-width: 1025px) and (max-width: 1919px){
+	#site-container {
+		overflow-x: hidden;
+	}
+
+	#second-half {
+		padding-top: 10vh;
+	}
+
+	/*#bio{
+		padding-right: 30px;
+		padding-left: 30px;
+		
+	}*/
+
+	
 
 	#bio-container {
-		padding: 0;
-		width: 80%;
-		margin:auto;
-
+		padding: auto;
 	}
 
 
-	#headshot {
-		float: none;
+	h2 {
+	text-align: left;
+}
+
+	
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+	img#headshot {
+		height: 12em;
+
+	}
+}
+
+/*This little piggy is for tablets and lil computers.*/
+
+@media (min-width: 767px) and (max-width: 1023px) {
+	#site-container {
+		overflow-x: hidden;
+		
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	img#headshot {
 		display: block;
-		margin: auto;
+		height:10rem;
+		padding-bottom: .5rem;
 	}
 
-	#bio-container p {
+	
+
+	#bio-container {
+		width: 200%;
+
+	}
+
+	#bio p {
+		text-align: left;
+		width: 100%;
+	}
+
+} 
+/*This lil piggy is for stylings in large tablets/ lil laptops and under*/
+
+@media (max-width: 1023px) {
+#bio-container p {
 		font-size: 1rem;
-		text-align: center;
 	}
 
 	#demo-container, #demo-container h2, #perf-links h2{
@@ -88,5 +193,37 @@ body {
 	#perf-links a {
 		margin: auto;
 		width: 54%;
+	}
+}
+
+
+	#bio-container {
+		/*padding: 0;*/
+		width: 80%;
+		margin:auto;
+
+	}
+
+
+	#headshot {
+		float: none;
+		display: block;
+		margin: auto;
+	}
+
+	
+}
+
+@media (max-width: 767px ){
+	
+	#bio-container p {
+		text-align: center;
+	}
+}
+
+@media (min-width: 0px) and  (max-width: 426px) {
+	
+	#bio-container {
+		padding: 0;
 	}
 }		
