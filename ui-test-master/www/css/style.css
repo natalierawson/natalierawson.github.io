@@ -1,0 +1,44 @@
+/* Desktop */
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+header {
+	background: #FFBB36;
+	height: 70px;
+}
+
+header h1, header p {
+	color: #FEFBF3;
+	
+}
+
+#heading-text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30px;
+	text-shadow: 1px 2px #D99F2E;
+}
+
+#heading-left {
+	font-family: "Gotham-Bold";
+	font-size: 20px;
+}
+
+#heading-right {
+	font-family: 'Gotham-Light';
+	font-size: 20px;
+}
+
+img#heading-center {
+	display: flex;
+	width: 90px;
+	margin: auto;
+	margin-top: -35px;
+}
+
+
+/* Mobile */
