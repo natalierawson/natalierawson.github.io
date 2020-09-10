@@ -119,8 +119,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 
 		#projects nav a{
 			display: block;
-			padding-right: 20px;
-
 		}
 
 		#projects nav a:hover {
@@ -342,9 +340,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 	    @media (min-width: 427px) and (max-width: 767px){
 
 			#projects {
+				display: flex;
 				flex-direction: column;
-				height: 300px;
-				width: 350px;
+				/*height: 300px;*/
+				/*width: 350px;*/
 				margin: auto;
 				flex-wrap: wrap;
 				justify-content: flex-start;
@@ -360,7 +359,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 			}
 
 			#projects nav a {
-				width: 190px;
+				/*width: 190px;*/
 				padding-bottom: 10px;
 				padding-right:0px;
 			}
@@ -417,7 +416,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 			
 			#projects {
 				flex-direction: column;
-				height: 300px;
+				/*height: 300px;*/
 				width: 350px;
 				margin: auto;
 				flex-wrap: wrap;
@@ -441,7 +440,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 
 			h3 {
 				margin: auto;
-				width: 25%;
 				text-align: center;
 				
 			}
@@ -499,14 +497,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 
 			h3 {
 				font-size: 1.5rem;
-				margin-left: 130px;
-				
 				padding-bottom: .5rem;
 			}
 
 			#projects {
 				flex-wrap: nowrap;
-				height: 25rem;
 				margin: auto;
 
 			}
