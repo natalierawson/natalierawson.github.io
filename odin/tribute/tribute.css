@@ -1,0 +1,303 @@
+body {
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0 auto;
+	background-image: url("https://i.pinimg.com/originals/fe/ce/42/fece42c8d50bcdb82d9586337f29ce26.jpg");
+}
+
+#main {
+	display: grid;
+	grid-template-columns: 1fr .5fr 1fr;
+	grid-column-gap: 5%;
+	grid-template-rows: .5fr .5fr .5fr; 
+	grid-template-areas:"header header header"
+						 "bio bio table"
+						 "bunuel bunuel bunuel";
+	background-color: rgba(255,255,255,.9);
+	padding-bottom: 30px;					 
+	
+}
+
+
+header {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	margin: 0 auto;
+	margin-top: -10px;
+	background-image: url("https://dxan6czxprkid.cloudfront.net/theatre/stephen-sondheim-theatre-featured-2048x1536.jpg?mtime=20190319163437&focal=none");
+	background-position: center center;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	grid-area: header;
+}
+
+#header-container {
+	background-color: rgba(0,0,0,.3);
+	margin: auto;
+	padding: 20px 0;
+	overflow-x: hidden;
+}
+
+
+#title {
+	
+	font-family: 'Nothing You Could Do', cursive;
+	font-size: 40px;
+	text-align: center;
+	background-color: rgba(255,255,255, .7);
+	border-radius: 20px;
+	width: 400px;
+	margin: 20px auto;
+	
+}
+
+#img-div {
+	position: relative;
+	margin: auto;
+	width: 400px;
+}
+
+#img-div p {
+	font-weight: bold;
+	background-color: rgba(255,255,255, .7);
+	border-radius: 20px;
+}
+
+#image {
+	display: block;
+	max-width: 400px;
+	width: 100%;
+	border-radius: 100%;
+}
+
+#img-caption {
+	text-align: center;
+}
+
+
+h2 {
+	text-align: center;
+}
+
+h2,p, ul, li, h3, table, td, th {
+	font-family: Open Sans, sans-serif;
+}
+
+p, li {
+	line-height: 1.5;
+	max-width: 700px;
+}
+
+.italics {
+	font-style: italic;
+}
+
+#bio {
+	grid-area: bio;
+
+}
+
+#learn-more {
+	list-style-type: none;
+	padding-bottom: 30px;
+	/*width: 506px;*/
+
+}
+
+#learn-more button {
+	background-color: #000;
+	height: 50px;
+	/*width: 250px;*/
+	border-color: #000;
+
+}
+
+#learn-more a {
+	text-decoration: none;
+	color: #FDEA7E;
+	padding: 10px;
+	font-size: 14px;
+}
+
+#learn-more li {
+	margin-top: 10px;
+	display: inline;
+}
+
+li {
+	padding: 5px 0;
+}
+
+#bunuel {
+	margin-left: 20px;
+	grid-area: bunuel;
+	margin: auto;
+	background-color: #FDEA7E;
+	padding: 0 20px;
+	border-radius: 20px;
+}
+
+#tbl-container {
+	grid-area: table;
+	min-height: 650px;
+	height: 700px;
+	overflow-y: scroll;
+}
+
+#show-list {
+	margin: auto;
+
+}
+
+.show-title {
+	max-width: 250px;
+	padding: 0 40px;
+}
+
+td {
+	text-align: center;
+}
+
+.tbl-img {
+	height: 100px;
+}
+
+@media only screen and (min-width: 1500px) {
+	#main {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: .33fr .5fr;
+		grid-template-areas: "header header header"
+							 "bio bunuel table";
+	}
+
+	header {
+		grid-area: header header header;
+	}
+
+	#bio {
+		grid-area: bio;
+	}
+
+	#bunuel {
+		grid-area: bunuel;
+		margin-top: 10px;
+	}
+
+	#tbl-container {
+		grid-area: table;
+		height: 1050px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#main {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 1500px;
+	}
+
+	header {
+		order: 1;
+		grid-area: unset;
+	}
+
+	#bio {
+		order: 2;
+		grid-area: unset;
+	}
+
+	#tbl-container {
+		order: 4;
+		grid-area: unset;
+		overflow-y: visible;
+		width: 90%;
+		margin: auto;
+	}
+
+	#bunuel {
+		order: 3;
+		grid-area: unset;
+		text-align: center;
+		border-radius:0;
+
+	}
+
+#learn-more {
+	
+	margin-bottom: 30px;
+	display: block;
+	margin: auto;
+}
+
+#learn-more button {
+	display: block;
+	height: 60px;
+	width: 300px;
+	margin: auto;
+	margin-bottom: 20px;	
+}
+
+#learn-more a {
+	padding: 20px 30px;
+	font-size: 16px;
+}
+
+#learn-more li {
+	
+
+}
+
+	p, li {
+		width: 75%;
+		margin: auto;
+	}
+
+	#bunuel p {
+		margin-bottom: 20px;
+	}
+
+
+}
+
+@media only screen and (max-width: 430px) {
+
+	header {
+		width: 100%;
+		
+	}
+
+	#header-container {
+		padding: 40px 0;
+	}
+
+	#title{
+		font-size: 30px;
+		width: 80%;
+	}
+
+	#image {
+		width: 100%;
+		margin: auto;
+	}
+
+	#img-div {
+		width: unset;
+		margin: auto;
+	}
+
+	#bunuel {
+	}
+
+	li, p, td {
+		font-size: 14px;
+	}
+
+}
+
+@media only and screen (max-width: 390px) {
+	header {
+		max-height: 300px;
+	}
+}
