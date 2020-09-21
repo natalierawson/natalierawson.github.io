@@ -1,5 +1,4 @@
 body {
-	width: 100%;
 	overflow-x: hidden;
 	margin: 0 auto;
 	background-image: url("https://i.pinimg.com/originals/fe/ce/42/fece42c8d50bcdb82d9586337f29ce26.jpg");
@@ -100,6 +99,7 @@ p, li {
 
 #bio {
 	grid-area: bio;
+	max-width: 800px;
 
 }
 
@@ -113,9 +113,9 @@ p, li {
 #learn-more {
 	list-style-type: none;
 	margin: 30px auto;
-	/*width: 506px;*/
 	grid-area: learn; 
 	padding-left: 0px;
+	padding-top: 15px;
 
 
 }
@@ -147,6 +147,16 @@ li {
 	background-color: #FDEA7E;
 	padding: 0 20px;
 	border-radius: 20px;
+}
+
+#bunuel h3 {
+	text-align: center;
+}
+
+#bunuel p {
+	width: 80%;
+	margin: 20px auto;
+	max-width: 700px
 }
 
 #tbl-container {
@@ -184,7 +194,7 @@ td {
 	}
 
 	#learn-more {
-		margin-top: -16vw !important;
+		margin-top: -15vw !important;
 	}
 
 
@@ -207,13 +217,15 @@ td {
 
 	#bio {
 		grid-area: bio;
+		
 	}
 
 	#learn-more {
 		grid-area: learn;
 		padding-left: 0px;
 		margin: 0 auto;
-		margin-top: -21vw;
+		margin-top: -16vw;
+
 
 	}
 
@@ -234,15 +246,8 @@ td {
 	}
 }
 
-@media only screen and (max-width: 950px) {
 
-	#learn-more {
-		margin: -40px auto;
-	}
-}
-
-
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 945px) {
 	#main {
 		display: flex;
 		flex-direction: column;
@@ -278,6 +283,9 @@ td {
 		grid-area: unset;
 		text-align: center;
 		border-radius:0;
+		width: 100%;
+		overflow-x: hidden;
+		padding: 0;
 
 	}
 
@@ -325,10 +333,21 @@ td {
 
 @media only screen and (max-width: 430px) {
 
+	body {
+		overflow-x: visible;
+	}
+
+	#main {
+		width: 100vw;
+		margin: auto;
+		overflow-x: hidden;
+	}
+
 
 	header {
 		width: 100%;
 		overflow-x: hidden;
+		overflow-y: hidden;
 		
 	}
 
