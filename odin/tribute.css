@@ -9,10 +9,11 @@ body {
 	display: grid;
 	grid-template-columns: 1fr .5fr 1fr;
 	grid-column-gap: 5%;
-	grid-template-rows: .5fr .5fr .5fr; 
+	grid-template-rows: 500px .5fr .5fr .1fr; 
 	grid-template-areas:"header header header"
 						 "bio bio table"
-						 "bunuel bunuel bunuel";
+						 "bunuel bunuel bunuel"
+						 "learn learn learn";
 	background-color: rgba(255,255,255,.9);
 	padding-bottom: 30px;					 
 	
@@ -35,8 +36,9 @@ header {
 #header-container {
 	background-color: rgba(0,0,0,.3);
 	margin: auto;
-	padding: 20px 0;
+	padding-top: 50px;
 	overflow-x: hidden;
+	min-height: 500px;
 }
 
 
@@ -54,21 +56,23 @@ header {
 
 #img-div {
 	position: relative;
-	margin: auto;
-	width: 400px;
+	margin: 0 auto;
+	width: 50%;
+	max-width: 400px;
 }
 
 #img-div p {
 	font-weight: bold;
 	background-color: rgba(255,255,255, .7);
 	border-radius: 20px;
+	padding: 10px;
 }
 
 #image {
 	display: block;
-	max-width: 400px;
-	width: 100%;
+	width: 80%;
 	border-radius: 100%;
+	margin: 20px auto;
 }
 
 #img-caption {
@@ -98,31 +102,37 @@ p, li {
 
 }
 
+#bio li {
+	width: 80%;
+	padding: 0 40px;
+	margin-bottom: 20px;
+	min-width: .5fr;
+}
+
 #learn-more {
 	list-style-type: none;
-	padding-bottom: 30px;
+	margin: 30px auto;
 	/*width: 506px;*/
+	grid-area: learn; 
+	padding-left: 0px;
+
 
 }
 
-#learn-more button {
-	background-color: #000;
-	height: 50px;
-	/*width: 250px;*/
-	border-color: #000;
-
-}
 
 #learn-more a {
 	text-decoration: none;
 	color: #FDEA7E;
-	padding: 10px;
-	font-size: 14px;
+	padding: 15px 30px;
+	font-size: 16px;
+	background-color: #000;
+	
+	
 }
 
 #learn-more li {
-	margin-top: 10px;
 	display: inline;
+	margin: 20px 0;
 }
 
 li {
@@ -140,8 +150,8 @@ li {
 
 #tbl-container {
 	grid-area: table;
-	min-height: 650px;
-	height: 700px;
+	min-height: 700px;
+	height: 45vw;
 	overflow-y: scroll;
 }
 
@@ -163,26 +173,54 @@ td {
 	height: 100px;
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 2000px) {
+	#bunuel {
+		margin-top: auto;
+	}
+
+	#learn-more {
+		margin-top: -16vw !important;
+	}
+
+
+}
+
+
+@media only screen and (min-width: 1559px) {
 	#main {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: .33fr .5fr;
+		grid-template-rows: .33fr .25fr 0fr;
 		grid-template-areas: "header header header"
-							 "bio bunuel table";
+							 "bio bunuel table"
+							 ". learn .";
 	}
 
 	header {
-		grid-area: header header header;
+		grid-area: header;
 	}
 
 	#bio {
 		grid-area: bio;
 	}
 
+	#learn-more {
+		grid-area: learn;
+		padding-left: 0px;
+		margin: 0 auto;
+		margin-top: -21vw;
+
+	}
+
+
+	#learn-more li{
+		margin: auto 10px;
+		padding: 0;
+	} 
+
 	#bunuel {
 		grid-area: bunuel;
-		margin-top: 10px;
+		margin-top: 100px;
 	}
 
 	#tbl-container {
@@ -190,6 +228,14 @@ td {
 		height: 1050px;
 	}
 }
+
+@media only screen and (max-width: 950px) {
+
+	#learn-more {
+		margin: -40px auto;
+	}
+}
+
 
 @media only screen and (max-width: 800px) {
 	#main {
@@ -203,13 +249,19 @@ td {
 		grid-area: unset;
 	}
 
+
+	p, li {
+		width: 75%;
+		margin: auto;
+	}
+
 	#bio {
 		order: 2;
 		grid-area: unset;
 	}
 
 	#tbl-container {
-		order: 4;
+		order: 5;
 		grid-area: unset;
 		overflow-y: visible;
 		width: 90%;
@@ -224,35 +276,32 @@ td {
 
 	}
 
-#learn-more {
-	
-	margin-bottom: 30px;
+
+#learn-more {	
 	display: block;
 	margin: auto;
-}
-
-#learn-more button {
-	display: block;
-	height: 60px;
-	width: 300px;
-	margin: auto;
-	margin-bottom: 20px;	
-}
-
-#learn-more a {
-	padding: 20px 30px;
-	font-size: 16px;
+	margin-top: 40px;
+	order: 4;
 }
 
 #learn-more li {
-	
-
+	display: block;
+	text-align: center;
+	height: 40px;
+	width: 100%;
 }
 
-	p, li {
-		width: 75%;
-		margin: auto;
-	}
+
+	#learn-more a {
+	font-size: 16px;
+	background-color: #000;
+	height: 40px;
+	width: 90%;
+	
+}
+
+
+
 
 	#bunuel p {
 		margin-bottom: 20px;
@@ -261,10 +310,20 @@ td {
 
 }
 
+@media only screen and (max-width: 600px) {
+
+	#img-div {
+		width: 80%;
+	}
+}
+
+
 @media only screen and (max-width: 430px) {
+
 
 	header {
 		width: 100%;
+		overflow-x: hidden;
 		
 	}
 
@@ -278,17 +337,13 @@ td {
 	}
 
 	#image {
-		width: 100%;
-		margin: auto;
+		width: 80%;
 	}
 
 	#img-div {
 		width: unset;
-		margin: auto;
 	}
 
-	#bunuel {
-	}
 
 	li, p, td {
 		font-size: 14px;
@@ -296,8 +351,18 @@ td {
 
 }
 
-@media only and screen (max-width: 390px) {
-	header {
-		max-height: 300px;
-	}
+
+
+@media only screen and (max-width: 300px) {
+body {
+	margin: unset;
+	overflow-x: visible;
+	min-width: 100%;
+}
+
+header {
+	margin: unset;
+}
+
+
 }
