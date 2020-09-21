@@ -259,6 +259,10 @@ td {
 		grid-area: unset;
 	}
 
+	#header-container {
+		padding: 30px;
+	}
+
 
 	p, li {
 		width: 75%;
@@ -285,7 +289,7 @@ td {
 		border-radius:0;
 		width: 100%;
 		overflow-x: hidden;
-		padding: 0;
+		padding: 0px;
 
 	}
 
@@ -295,6 +299,7 @@ td {
 	margin: auto;
 	margin-top: 40px;
 	order: 4;
+	padding: 0px;
 }
 
 #learn-more li {
