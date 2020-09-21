@@ -73,6 +73,7 @@ header {
 	width: 80%;
 	border-radius: 100%;
 	margin: 20px auto;
+	max-width: 400px;
 }
 
 #img-caption {
