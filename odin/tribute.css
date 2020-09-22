@@ -8,13 +8,14 @@ body {
 	display: grid;
 	grid-template-columns: 1fr .5fr 1fr;
 	grid-column-gap: 5%;
-	grid-template-rows: 500px .5fr .5fr .1fr; 
+	grid-template-rows: 500px .5fr .3fr .1fr .05fr; 
 	grid-template-areas:"header header header"
 						 "bio bio table"
 						 "bunuel bunuel bunuel"
-						 "learn learn learn";
+						 "learn learn learn"
+						  ". . footer";
 	background-color: rgba(255,255,255,.9);
-	padding-bottom: 30px;					 
+	padding-bottom: 5px;					 
 	
 }
 
@@ -184,6 +185,18 @@ td {
 	height: 100px;
 }
 
+footer {
+	grid-area: footer;
+	font-size: 13px;
+	align-self: end;
+}
+
+footer p {
+	margin-bottom: 0px;
+	text-align: right;
+	min-width: 600px;
+	}
+
 @media only screen and (min-width: 2000px) {
 	header {
 		background-size: cover;
@@ -208,7 +221,8 @@ td {
 		grid-template-rows: .33fr .25fr 0fr;
 		grid-template-areas: "header header header"
 							 "bio bunuel table"
-							 ". learn .";
+							 ". learn ."
+							 ". footer footer";
 	}
 
 	header {
@@ -244,6 +258,14 @@ td {
 		grid-area: table;
 		height: 1050px;
 	}
+
+	footer {
+		grid-area: footer;
+	}
+
+	footer p {
+		text-align: center;
+	}
 }
 
 
@@ -251,7 +273,6 @@ td {
 	#main {
 		display: flex;
 		flex-direction: column;
-		padding-bottom: 1500px;
 	}
 
 	header {
@@ -280,6 +301,7 @@ td {
 		overflow-y: visible;
 		width: 90%;
 		margin: auto;
+		height:auto;
 	}
 
 	#bunuel {
@@ -325,8 +347,24 @@ td {
 		margin-bottom: 20px;
 	}
 
+	footer {
+		grid-area: unset;
+		order: 6;
+		margin: auto;
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	footer p {
+		width: 90%;
+		min-width: unset;
+		text-align: center;
+	}
+
 
 }
+
+
 
 @media only screen and (max-width: 600px) {
 
