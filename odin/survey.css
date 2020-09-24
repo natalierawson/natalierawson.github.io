@@ -1,0 +1,194 @@
+body {
+	margin: 0 auto;
+	background: url("https://s3-eu-west-1.amazonaws.com/lwt-live/wp-content/uploads/2018/06/01101347/POTO_Lon_2018_Maestro-1400x931.jpg") no-repeat center center fixed;
+	background-size: cover;
+
+	
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	background-color: rgba(0,0,0,.7);
+}
+
+h1, legend, button {
+	font-family: 'Homemade Apple', cursive;
+}
+
+h1, button {
+	color: #bc0b0b;
+}
+
+h1 {
+	line-height: 1.3;
+	margin: 50px 0;
+	text-align: center;
+}
+
+.spacing {
+	margin-right: 8px;
+}
+
+p, label {
+	font-family: Lato, sans-serif;
+}
+
+#description {
+	margin: auto;
+	padding-bottom: 20px;
+	width: 90%;
+	line-height: 1.6;
+	text-align: center;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+form {
+	width: 70%;
+	max-width: 1000px;
+	margin: auto;
+	background-color: rgba(255, 232, 230,.8);
+	padding: 30px;
+	margin-bottom: 40px;
+}
+
+fieldset {
+	margin-top: 10px;
+	border-color: #000;
+	font-size: 16px;
+}
+
+fieldset p {
+	line-height: 1.4;
+}
+
+legend {
+	padding: 0 5px;
+}
+
+textarea {
+	width: 99%;
+	height: 200px;
+}
+
+button {
+	height: 70px;
+	width: 200px;
+	font-size: 30px;
+	margin: auto;
+	-webkit-transition: background-color 500ms; /* For Safari 3.0 to 6.0 */
+    transition: background-color 500ms; /* For modern browsers */
+
+}
+
+button:hover {
+	background-color: #000;
+	border-color: #000;
+}
+
+#basic-container, #musical-container, #personality-container  {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#basic-container div, #musical-container div, #personality-container div {
+	padding: 3px 10px;
+}
+
+#name-div {
+	width: 250px;
+}
+
+#email-div {
+	width: 340px;
+
+}
+
+#age-div {
+	width: 100px;
+
+}
+
+#gender-div {
+	width: 150px;
+}
+
+#name {
+	width: 190px;
+}
+
+#number {
+	width: 40px;
+}
+
+#email {
+	width: 280px;
+	
+}
+
+#yearsexp {
+	width: 40px;
+}
+
+#instruments-answers {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+#pandora1-answers, #pandora2-answers, #pspace-answers {
+	display: flex;
+	flex-direction: row;
+}
+
+#mask1-answers div label {
+	line-height: 1.4;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	form {
+		width: 80%;
+		margin: auto;
+	}
+
+	#basic-container div, #musical-container div, #personality-container div {
+	padding: 3px 5px;
+	}
+
+	#mask1-answers div {
+		margin: 10px 0;
+	}
+}
+
+@media only screen and (max-width: 509px) {
+
+	#basic-container, #musical-container, #personality-container  {
+		flex-direction: column;
+	}
+
+	#basic-container div, #musical-container div, #personality-container div {
+	padding: 3px;
+	}
+
+	#email-div, #name-div {
+		width: 90%;
+	}
+
+	#email, #name {
+		width: 70%;
+	}
+}
+
+
+
+

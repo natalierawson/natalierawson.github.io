@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Music Student Application</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="survey.css" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<h1 id="title"><span class="spacing">New</span> Student <br>Application</h1>
+
+		<form id="survey-form">
+			<p id="description">Things haven't been working out with current pupils. <span class="strike">The Phantom of the Opera</span> The friendly basement inhabitant of this particular music venue wants to know if you'd like free classical voice training with absolutely no strings attached! Interested artists may fill out this survey form with details. Offer limited!</p>
+			<fieldset id="basic">
+				<legend>Basic Information</legend>
+				<div id="basic-container">
+					<div id="name-div">
+						<label for="name" id="name-label">Name: </label> 
+						<input type="text" id="name" name="name" required placeholder="Name (It's not Christine is it?)">
+					</div>
+					<div id="email-div">
+						<label for="email" id="email-label">Email: </label>
+						<input type="email" id="email" required name="email" placeholder="Ghost@OperaGarnier.com (Just an example)">
+					</div>
+
+					<div id="age-div">
+						<label for="number" id="number-label">Age: </label>
+						<input type="number" id="number" required name="number" min="18" max="36" placeholder="18+">
+					</div>
+
+					<div id="gender-div">
+						<label for="gender" id="gender-label">Gender: </label>
+  						<select id="gender" name="gender" size="1" required>
+    						<option value="f">Female</option>
+    						<option value="m">Male</option>
+    						<option value="other">Other</option>
+  						</select>
+  					</div>
+  				</div>
+			</fieldset>
+
+		
+
+  			<fieldset id="musical">
+  				<legend>Musical Information</legend>
+  				<div id="musical-container">
+  					<div id="voice-div">
+  						<label for="voice" id="voice-label">Voice Type: </label>
+  						<select id="dropdown" name="voice" size="1" required>
+    						<option value="soprano">Soprano</option>
+    						<option value="alto">Alto</option>
+    						<option value="tenor">Tenor</option>
+    						<option value="bass">Bass</option>
+  						</select>
+  					</div>
+  					<div id="training-div">
+  						<label for="yearsexp" id="yearsexp-label">Years of training:</label>
+						<input type="number" id="yearsexp" name="yearsexp"  placeholder="1+" required>
+					</div>
+					<div id="instruments-div">
+  						<p>Would you like other types of musical training? If so, select from any of the following (yes, any):</p>
+  						<div id="instruments-answers">
+  							<div id="organ">
+  								<input type="checkbox" name="instruments" value="organ">
+								<label for="organ">Organ</label>
+							</div>
+							<div id="piano">
+								<input type="checkbox" name="instruments" value="piano">
+								<label for="piano">Piano</label>
+							</div>
+							<div id="bassoon">
+								<input type="checkbox" name="instruments" value="bassoon">
+								<label for="bassoon">Bassoon</label>
+							</div>
+							<div id="trombone">
+								<input type="checkbox" name="instruments" value="trombone">
+								<label for="trombone">Trombone</label>
+							</div>
+							<div id="guitar">
+								<input type="checkbox" name="instruments" value="guitar">
+								<label for="guitar">Guitar</label>
+							</div>
+						</div>
+					</div>
+				</div>	
+  			</fieldset>
+
+  			<fieldset id="personality">
+  				<legend>Personality Questions</legend>
+  				<div id="personality-container">
+  					<div id="pandora1-div">
+  						<p>Are you familiar with the myth of Pandora?</p>
+  						<div id="pandora1-answers">
+  							<div id="pandora1-yes">	
+  								<input type="radio" name="knowledge" value="yes">
+								<label for="yes">Yes</label>
+							</div>
+							<div id="pandora1-no">
+								<input type="radio" name="knowledge" value="no">
+								<label for="no">No</label>
+							</div>
+						</div>
+					</div>
+					<div id="pandora2-div">
+  						<p>Do you, like Pandora in the story of Pandora's box, have a chronic inability to leave well enough alone?</p>
+  						<div id="pandora2-answers">
+  							<div id="pandora2-yes">
+								<input type="radio" name="pandora" value="yes">
+								<label for="yes">Yes</label>
+							</div>
+							<div id="pandora2-no">
+								<input type="radio" name="pandora" value="no">
+								<label for="no">No</label>
+							</div>
+						</div>
+					</div>
+					<div id="pspace-div">
+						<p>Do you respect others' personal space?</p>
+						<div id="pspace-answers">
+							<div id="pspace-yes">
+								<input type="radio" name="personalspace" value="yes">
+								<label for="yes">Yes</label>
+							</div>
+							<div id="pspace-no">
+								<input type="radio" name="personalspace" value="no">
+								<label for="no">No</label>
+							</div>
+						</div>
+					<div id="mask1-div">
+						<p>(Hypothetical!) If you saw someone wearing a mask and they told you not to touch it, you would:</p>
+						<div id="mask1-answers">
+							<div id="mask1-best">
+								<input type="radio" name="mask" value="best">
+								<label for="best">Not touch it. No questions asked.</label>
+							</div>
+							
+							<div id="mask1-good">
+								<input type="radio" name="mask" value="good">
+								<label for="good">Ask about it, respect the answer given, then never bring it up again or touch the mask.</label>
+							</div>
+							
+							<div id="mask1-bad">
+								<input type="radio" name="mask" value="bad">
+								<label for="bad">Make a game of trying to poke at the mask anyway.</label>
+							</div>
+							
+							<div id="mask1-worst">
+								<input type="radio" name="mask" value="worst">
+								<label for="worst">Not stop at trying to touch the mask, and instead catch the wearer off-guard so you could remove it completely.</label>
+							</div>
+						</div>
+					</div>
+					<div id="mask2-div">
+						<p>Please explain the reasoning for your answer to the previous question. Be as in depth as possible.</p>
+						<textarea required></textarea>
+					</div>
+				</div>
+  			</fieldset>
+  			<p>Thank you for your time! The most compatible student candidates will be notified soon.</p>
+  			<button id="submit" type="submit">Submit</button>
+		</form>
+	</div>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>		
+</body>
+</html>
