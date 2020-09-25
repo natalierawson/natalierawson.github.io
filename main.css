@@ -30,7 +30,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 
 		
 
-		h1,h2,h3, .navbar-brand {
+		h1,h2,h3, h4, .navbar-brand {
 			font-family: "Calligraffitti";
 
 		}
@@ -68,6 +68,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000114', end
 			font-size: 30px;
 			color: white;
 			
+		}
+
+		h4 {
+			color: white;
+			font-size: 24px;
+			margin-top: 20px;
+			margin-left: 10px;
 		}
 
 		a,p {
