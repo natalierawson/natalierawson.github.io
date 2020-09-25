@@ -31,7 +31,7 @@ h1 {
 	margin-right: 8px;
 }
 
-p, label {
+p, label, footer {
 	font-family: Lato, sans-serif;
 }
 
@@ -151,6 +151,17 @@ button:hover {
 	line-height: 1.4;
 }
 
+footer {
+	color: rgb(255, 232, 230);
+	margin-bottom: 20px;
+}
+
+footer p {
+	width: 70%;
+	margin: auto;
+	text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
 	body {
 		overflow-x: hidden;
@@ -167,6 +178,10 @@ button:hover {
 
 	#mask1-answers div {
 		margin: 10px 0;
+	}
+
+	footer {
+		margin-top: 20px;
 	}
 }
 
