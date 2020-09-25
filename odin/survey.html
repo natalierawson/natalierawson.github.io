@@ -32,6 +32,7 @@
 					<div id="gender-div">
 						<label for="gender" id="gender-label">Gender: </label>
   						<select id="gender" name="gender" size="1" required>
+  							<option value="">Select</option>
     						<option value="f">Female</option>
     						<option value="m">Male</option>
     						<option value="other">Other</option>
@@ -46,8 +47,9 @@
   				<legend>Musical Information</legend>
   				<div id="musical-container">
   					<div id="voice-div">
-  						<label for="voice" id="voice-label">Voice Type: </label>
+  						<label for="dropdown" id="voice-label">Voice Type: </label>
   						<select id="dropdown" name="voice" size="1" required>
+  							<option value="">Select</option>
     						<option value="soprano">Soprano</option>
     						<option value="alto">Alto</option>
     						<option value="tenor">Tenor</option>
@@ -61,24 +63,24 @@
 					<div id="instruments-div">
   						<p>Would you like other types of musical training? If so, select from any of the following (yes, any):</p>
   						<div id="instruments-answers">
-  							<div id="organ">
-  								<input type="checkbox" name="instruments" value="organ">
+  							<div id="organ-div">
+  								<input type="checkbox" name="instruments" value="organ" id="organ">
 								<label for="organ">Organ</label>
 							</div>
-							<div id="piano">
-								<input type="checkbox" name="instruments" value="piano">
-								<label for="piano">Piano</label>
+							<div id="piano-div">
+								<input type="checkbox" name="instruments" value="piano" id="piano">
+								<label for="piano">Piano</label> 
 							</div>
-							<div id="bassoon">
-								<input type="checkbox" name="instruments" value="bassoon">
+							<div id="bassoon-div">
+								<input type="checkbox" name="instruments" value="bassoon" id="bassoon">
 								<label for="bassoon">Bassoon</label>
 							</div>
-							<div id="trombone">
-								<input type="checkbox" name="instruments" value="trombone">
+							<div id="trombone-div">
+								<input type="checkbox" name="instruments" value="trombone" id="trombone">
 								<label for="trombone">Trombone</label>
 							</div>
-							<div id="guitar">
-								<input type="checkbox" name="instruments" value="guitar">
+							<div id="guitar-div">
+								<input type="checkbox" name="instruments" value="guitar" id="guitar">
 								<label for="guitar">Guitar</label>
 							</div>
 						</div>
@@ -93,12 +95,12 @@
   						<p>Are you familiar with the myth of Pandora?</p>
   						<div id="pandora1-answers">
   							<div id="pandora1-yes">	
-  								<input type="radio" name="knowledge" value="yes">
-								<label for="yes">Yes</label>
+  								<input type="radio" name="knowledge" value="yes" id="yespan1">
+								<label for="yespan1">Yes</label>
 							</div>
 							<div id="pandora1-no">
-								<input type="radio" name="knowledge" value="no">
-								<label for="no">No</label>
+								<input type="radio" name="knowledge" value="no" id="nopan1">
+								<label for="nopan1">No</label>
 							</div>
 						</div>
 					</div>
@@ -106,12 +108,12 @@
   						<p>Do you, like Pandora in the story of Pandora's box, have a chronic inability to leave well enough alone?</p>
   						<div id="pandora2-answers">
   							<div id="pandora2-yes">
-								<input type="radio" name="pandora" value="yes">
-								<label for="yes">Yes</label>
+								<input type="radio" name="pandora" value="yes" id="yespan2">
+								<label for="yespan2">Yes</label>
 							</div>
 							<div id="pandora2-no">
-								<input type="radio" name="pandora" value="no">
-								<label for="no">No</label>
+								<input type="radio" name="pandora" value="no" id="nopan2">
+								<label for="nopan2">No</label>
 							</div>
 						</div>
 					</div>
@@ -119,35 +121,35 @@
 						<p>Do you respect others' personal space?</p>
 						<div id="pspace-answers">
 							<div id="pspace-yes">
-								<input type="radio" name="personalspace" value="yes">
-								<label for="yes">Yes</label>
+								<input type="radio" name="personalspace" value="yes" id="yespspace">
+								<label for="yespspace">Yes</label>
 							</div>
 							<div id="pspace-no">
-								<input type="radio" name="personalspace" value="no">
-								<label for="no">No</label>
+								<input type="radio" name="personalspace" value="no" id="nopspace">
+								<label for="nopspace">No</label>
 							</div>
 						</div>
 					<div id="mask1-div">
 						<p>(Hypothetical!) If you saw someone wearing a mask and they told you not to touch it, you would:</p>
 						<div id="mask1-answers">
 							<div id="mask1-best">
-								<input type="radio" name="mask" value="best">
-								<label for="best">Not touch it. No questions asked.</label>
+								<input type="radio" name="mask" value="best" id="mask1best">
+								<label for="mask1best">Not touch it. No questions asked.</label>
 							</div>
 							
 							<div id="mask1-good">
-								<input type="radio" name="mask" value="good">
-								<label for="good">Ask about it, respect the answer given, then never bring it up again or touch the mask.</label>
+								<input type="radio" name="mask" value="good" id="mask1good">
+								<label for="mask1good">Ask about it, respect the answer given, then never bring it up again or touch the mask.</label>
 							</div>
 							
 							<div id="mask1-bad">
-								<input type="radio" name="mask" value="bad">
-								<label for="bad">Make a game of trying to poke at the mask anyway.</label>
+								<input type="radio" name="mask" value="bad" id="mask1bad">
+								<label for="mask1bad">Make a game of trying to poke at the mask anyway.</label>
 							</div>
 							
 							<div id="mask1-worst">
-								<input type="radio" name="mask" value="worst">
-								<label for="worst">Not stop at trying to touch the mask, and instead catch the wearer off-guard so you could remove it completely.</label>
+								<input type="radio" name="mask" value="worst" id="mask1worst">
+								<label for="mask1worst">Not stop at trying to touch the mask, and instead catch the wearer off-guard so you could remove it completely.</label>
 							</div>
 						</div>
 					</div>
@@ -156,11 +158,12 @@
 						<textarea required></textarea>
 					</div>
 				</div>
-  			</fieldset>
-  			<p>Thank you for your time! The most compatible student candidates will be notified soon.</p>
-  			<button id="submit" type="submit">Submit</button>
-		</form>
-	</div>
+			</div>
+  		</fieldset>
+  		<p>Thank you for your time! The most compatible student candidates will be notified soon.</p>
+  		<button id="submit" type="submit">Submit</button>
+	</form>
+</div>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>		
 </body>
