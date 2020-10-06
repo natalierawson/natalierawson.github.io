@@ -132,3 +132,10 @@ iframe {
 	width: 100%;
 	max-width: 15em;
 }
+
+footer p{
+	text-align: center;
+	width: 80%;
+	margin: .3em auto;
+	line-height: 1.4;
+}
