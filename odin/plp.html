@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Opera Populaire Auction</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Special+Elite&display=swap" rel="stylesheet">
+	<link href="plp.css" rel="stylesheet" type="text/css">
+	<style>
+	/* Style Tag Used To Pass FCC Tests. Otherwise, style sheet would be used. */
+		@media (max-width: 1300px) {
+			h1 {
+				font-size: 1.3em;
+				top: 4.5em;
+			}
+
+			#header-img {
+				height: 8em;
+			}
+
+			#nav-bar {
+				width: 70%;
+			}	
+
+			#nav-bar ul {
+				height: 6em;
+				padding-inline-start: 0;
+				flex-wrap: wrap;
+			}
+
+
+			#nav-bar li {
+			}
+
+			#nav-bar a {
+				padding: .2em;
+				font-size: .9em;
+			}
+
+			.description-container p {
+				padding-right: 1.5em;
+			}
+
+			#chandelier img {
+				width: 20em;
+				height: 15em !important;
+			}
+
+			iframe {
+	 			height: 20vw;
+			 	width: 30vw;
+			 }
+		}
+
+		@media (max-width: 940px){
+			#nav-bar ul {
+				padding-inline-start: .5em;
+				flex-wrap: wrap;
+			}
+		}
+
+		@media (max-width: 840px) {
+			h1 {
+				top: 4.5em;
+				left: .2em;
+			}
+
+			#nav-bar {
+				width: 60%;
+			}
+
+			#nav-bar li {
+				padding: 0 .5em;
+			}
+
+			#nav-bar ul {
+				font-size: .95em;
+				height: 5em;
+				margin: 2em auto;
+				padding-inline-start: 0;
+				width: 80%;
+			}
+
+			#items {
+				padding-top: 9em;
+			}
+
+			#item-container section {
+				display: flex;
+				flex-direction: column;
+			}
+
+			#item-container section img {
+				height: unset;
+				margin: 0 auto;
+				width: 50%;
+				padding-top: 1em;
+			}
+
+			.info-container {
+				width: 85%;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			.description-container {
+				padding-bottom: 1em;
+			}
+
+			.description-container h3, .description-container p {
+				display: inline;
+			}
+
+			.description-container p {
+				padding: unset;
+			}
+
+			iframe {
+				height: 30vw;
+				width: 40vw;
+				margin: 0 auto;
+				padding-bottom: 1em;
+			}
+		}
+
+		@media (max-width: 630px) {
+			#nav-bar ul {
+				width: 50%;
+				height: unset;
+			}
+
+			#nav-bar li {
+				margin: .3em 0;
+			}
+
+			#items {
+				padding-top: 10em;
+			}
+		}
+
+		@media (max-width: 600px) {
+			#nav-bar {
+				width:60%;
+			}
+		} 
+
+		@media (max-width: 510px) {
+			h1 {
+				top: 6em;
+				left: .1em;
+			}
+
+			#brand-div {
+				width: 65%;
+				margin-top: 1em;
+			}
+
+			#nav-bar {
+				width: 35%;
+			}
+
+			#nav-bar ul {
+				width: 100%;
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			#nav-bar li {
+				padding: 0;
+				margin: .4em 0;
+			}
+
+			#items {
+				padding-top: 14em;
+			}
+
+			#item-container{
+				width: 100%;
+			}
+
+			#chandelier img {
+				width: 60vw;
+				height: 30vw !important;
+			}
+
+			iframe {
+				height: 50vw;
+				width: 60vw;
+			}
+		}
+
+		@media (max-width: 430px) {
+			header {
+				flex-direction: column;
+			}
+
+			#brand-div {
+				width: 100%;
+				margin: 0 auto;
+			}
+
+			#header-img {
+				display: flex;
+				margin: 0 auto;
+			}
+
+			h1 {
+				top: 3em;
+				left: 20%;
+			}
+
+			#nav-bar {
+				width: 100%;
+			}
+
+			#nav-bar ul {
+				margin: 1em auto;
+				font-size: 1em;
+			}
+
+			#nav-bar li {
+				margin: .4em auto;
+			}
+
+			#items {
+				padding-top: 19em;
+			}
+		}
+
+		@media (max-width: 370px) {
+			h1 {
+				left: 10%;
+			}
+		}
+
+	</style>
+</head>
+<body>
+<header id="header">
+	<div id="brand-div">
+		<img id="header-img" src="https://www.inkart.net/illustration/european_architecture/paris_opera_house/paris_opera_house_large.gif">
+		<h1>Opera Populaire Auction</h1>
+	</div>
+	<nav id="nav-bar">
+		<ul>
+			<li><a class="nav-link" href="#hannibal">"Hannibal" Poster</a></li>
+			<li><a class="nav-link" href="#robert-props">"Robert le Diable" Props</a></li>
+			<li><a class="nav-link" href="#music-box">Music Box</a></li>
+			<li><a class="nav-link" href="#chandelier">Chandelier</a></li>
+			<li><a class="nav-link" href="#notify">Contact</a></li>
+		</ul>
+	</nav>
+	</header>
+	<section id="items">
+		<h2>Auction Highlights</h2>
+		<p>Open to the public! Exciting items from throughout the opera house's history. You can bid on these and more.</p>
+		<div id="item-container">
+			<section id="hannibal">
+				<img src="https://i.pinimg.com/originals/83/da/ec/83daec56594a72a28b7d745627b23b1d.jpg" alt="Poster of Opera Populaire's production of Hannibal starring La Carlotta.">
+				<div class="info-container">
+					<h3>Lot#: <span class="lot">663</span></h3>
+					<div class="description-container">
+						<h3>Description:</h3> 
+						<p>A poster for this house's production of "Hannibal" by Chalumeau.</p>
+					</div>
+				</div>	
+			</section>
+			<section id="robert-props">
+				<img src="http://theatreprops.org.uk/Site/themed-images/placeholders/360x270/skulls.jpg" alt="Props from the 1831 production of Robert le Diable by Meyerbeer.">
+				<div class="info-container">
+					<h3>Lot#: <span class="lot">664</span></h3>
+					<div class="description-container">
+						<h3>Description:</h3> 
+						<p>A wooden pistol and three (3) human skulls from the 1831 production of "Robert le Diable" by Meyerbeer. </p>
+					</div>
+				</div>
+			</section>
+			<section id="music-box">
+				<img src="https://themusicboxcompany.com/wp-content/uploads/2019/08/Small-Monkey.jpg" alt="A music box featuring a monkey holding cymbals.">
+				<div class="info-container">
+					<h3>Lot#: <span class="lot">665</span></h3>
+					<div class="description-container">
+						<h3>Description:</h3> 
+						<p> A papier-mâché musical box in the shape of a barrel-organ. Attached, the figure of a monkey in persian robes, playing the cymbals. Discovered in the vaults of the theatre, still in working order.</p>
+					</div>
+					<iframe id="video" src="https://www.youtube.com/embed/72mkWGj6A78" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>	
+				
+			</section>
+			<section id="chandelier">
+				<img src="https://twincitiesarts.com/wp-content/uploads/2017/12/chandelier-1132x509.jpg" alt="An antique crystal chandelier adorned with functional lightbulbs.">
+				<div class="info-container">
+					<h3>Lot#: <span class="lot">666</span></h3>
+					<div class="description-container">
+						<h3>Description:</h3> 
+						<p>A chandelier in pieces. Some of you may recall the strange affair of "The Phantom of the Opera", a mystery that was never fully explained. This may be the chandelier which figures in the famous disaster. Our workshops have repaired it and wired parts of it for electric compatibility.</p>
+					</div>	
+					<iframe src="https://www.youtube.com/embed/cBi96MtEXqg?start=42&end=58;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</section>
+		</div>
+	</section>
+
+	<section id="notify">
+		<h2>Auction Notification Form</h2>
+		<p>If you would like to be notified of further auctions from this opera house, fill out this form to be added to our mailing list.</p>
+		<form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+			<input id="email" type="email" name="email" required placeholder="Email">
+			<input type="submit" name="submit" id="submit">
+		</form>
+	</section>
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

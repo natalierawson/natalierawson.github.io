@@ -1,0 +1,134 @@
+
+
+
+body {
+	margin: 0 auto;
+	background: url("https://www.wookey.co.uk/wp-content/uploads/2018/04/paper-background.jpg") center center;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	background: rgb(255,255,255);
+	/*background: url("https://www.wookey.co.uk/wp-content/uploads/2018/04/paper-background.jpg") center center;*/
+	/*background: linear-gradient(90deg, rgba(255,255,255,1) 35%, rgba(247,238,216,1) 45%);*/
+	justify-content: space-between;
+	margin: 0 auto;
+	z-index: 3;
+	margin-top: -.1em;
+	width: 100%;
+}
+
+#brand-div {
+	width: 30%;
+}
+
+#header-img {
+	height: 12em;
+}
+
+
+h1, h2, h3 {
+	font-family: 'Special Elite', cursive;
+}
+
+p, ul, .lot {
+	font-family: 'Josefin Slab', serif;
+}
+
+h1 {
+	transform: rotate(-20deg);
+	z-index: 5;
+	position: absolute;
+	top: 3em;
+	left: 1em;
+	background-color: rgba(255,255,255,.5);
+	padding: .3em;
+}
+
+#nav-bar {
+	width: 70%;
+}
+
+#nav-bar ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	align-items: center;
+	height: 6em;
+	width: 100%;
+	font-size: 1.33em;
+}
+
+#nav-bar li {
+	padding: 0 .2em;
+}
+
+#nav-bar a {
+	text-decoration: none;
+	color: #000;
+	padding: 1em;
+	background: url("https://www.wookey.co.uk/wp-content/uploads/2018/04/paper-background.jpg");
+}
+
+#nav-bar a:hover {
+	text-decoration: underline;
+}
+
+#items {
+	position: relative;
+	width: 80%;
+	max-width: 100em;
+	margin: auto;
+	padding-top: 12em;
+}
+
+#item-container section {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 5em;
+	border: 1px solid black;
+	background: #fff;
+}
+
+#item-container section img {
+	height: 18em;
+	margin-right: 3em;
+}
+
+#chandelier img {
+	width: 25em;
+}
+
+.description-container {
+	width: 100%;
+}
+
+
+.description-container p {
+	line-height: 1.6;
+	max-width: 35em;
+}
+
+iframe {
+	height: 20vw;
+	width: 40vw;
+	padding-bottom: 1em;
+}
+
+#notify {
+	margin: 0 auto;
+	width: 80%;
+	padding-bottom: 6em;
+}
+
+#notify h2, #notify p {
+	text-align: center;
+}
+
+#notify form {
+	margin: auto;
+	width: 100%;
+	max-width: 15em;
+}
