@@ -1,4 +1,7 @@
 	/*CSS for Main Site and Web Skills Part of Site*/
+		html {
+			scroll-behavior: smooth;
+		}
 	
 		body{
 			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000114+0,0f0054+49,0f0054+49,5f0077+83,cc2e85+100 */
