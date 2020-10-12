@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A Certain Potion</title>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Henny+Penny&family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="techdoc.css" type="text/css">
+	<style>
+		@media (max-width: 950px) {
+	header {
+		font-size: 1em;
+	}
+
+	#main-doc {
+		width: 65%;
+		margin-left: 38%;
+	}
+
+	#main-doc p, #main-doc li {
+		font-size: .8em;
+	}
+
+	#navbar {
+		width: 35%;
+	}
+
+	#navbar ul {
+		width: 90%;
+	}
+
+	#navbar li {
+		font-size: .85em;
+	}
+}
+
+@media (max-width: 800px) {
+	img {
+		margin: 2em 25%;
+	}
+}
+
+@media (max-width: 600px) {
+	#navbar {
+		width: 30%;
+	}
+
+	#navbar header, #navbar ul {
+		margin-left: .7em;
+	}
+
+	#main-doc p {
+		width: 90%;
+	}
+
+	img {
+		margin: 2em 20%;
+	}
+
+}
+
+@media (max-width: 500px) {
+	img {
+		margin: 2em 10%;
+	}
+}
+
+@media (max-width: 330px){
+	#navbar {
+		text-align: center;
+	}
+
+	#navbar header {
+		margin-bottom: 0;
+	}
+
+	#navbar ul{
+		width: unset;
+	}
+
+	#navbar li {
+		padding: .6em 0;
+	}
+
+}
+
+	</style>
+</head>
+<body>
+	<nav id="navbar">
+		<header>A Certain Potion</header>
+
+		<ul>
+			<li><a class="nav-link" href="#Welcome">Welcome</a></li>
+			<li><a class="nav-link" href="#Before_Starting">Before Starting</a></li>
+			<li><a class="nav-link" href="#Cow_as_White_as_Milk">Cow as White as Milk</a></li>
+			<li><a class="nav-link" href="#Cape_as_Red_as_Blood">Cape as Red as Blood</a></li>
+			<li><a class="nav-link" href="#Hair_as_Yellow_as_Corn">Hair as Yellow as Corn</a></li>
+			<li><a class="nav-link" href="#Slipper_as_Pure_as_Gold">Slipper as Pure as Gold</a></li>
+		</ul>
+	</nav>
+	<main id="main-doc">
+		<section class="main-section" id="Welcome">
+			<header>Welcome</header>
+
+			<p>If you are reading this, when you were a child and your mother was expecting, your father stole from my garden. It was a great personal loss. In turn, I put a curse on him to be the end of his family line. I also took custody of your new baby sister, but that's another story. Your father got off easy (I <span class="italics">could</span> have turned him into a dog, or a stone, or a chair or a sna...you get it) and any attempts you have made to have a baby have been unsuccessful as a result.</p> 
+
+			<p>I, in my generosity, have offered you a chance to undo the curse.</p>
+
+			<p>What's in it for me, you ask? Shut up.</p>
+
+			<p>Yes, you have a sister. Shut up.</p>
+
+			<p>There is a potion you must make for me which consists of four key ingredients:</p>
+
+			<ol>
+				<li>A cow as white as milk.</li>
+				<li>A cape as red as blood.</li>
+				<li>Hair as yellow as corn.</li>
+				<li>A slipper as pure as gold.</li>
+			</ol>
+
+			<p>You're likely to find them in the nearby wood, but be quick! I must have these ingredients before midnight in three days for the potion to work.</p>
+
+			<p>For your convenience, I have written about the ingredients in plain English and basic Javascript. I don't know why I expect you to understand Javascript. I know you are a baker and come from a family of bakers. Sorry about your father's tragic "Baking Accident" by the way.</p>
+			
+		</section>
+		<section class="main-section" id="Before_Starting">
+			<header>Before Starting</header>
+			<p>Important to note!</p>
+			<ol>
+				<li>I must not have touched the ingredients.</li>
+				<li><em>I must not have touched the ingredients.</em></li>
+				<li><strong>I must not have touched the ingredients.</strong></li>
+				<li><strong><em>I must not have touched the ingredients.</em></strong></li>
+			</ol>
+			<p>Oh. And one more thing.</p>
+			<code>
+				I MUST NOT HAVE TOUCHED THE INGREDIENTS.
+				var me = {touchedingredients: false};
+				
+			</code>
+			<p>Now get going! Do you think this is some kind of a fairytale with a fairy godmother who is going to swoop in and do it all for you?</p>
+		</section>
+		<section class="main-section" id="Cow_as_White_as_Milk">
+			<header>Cow as White as Milk</header>
+			<p>It's a cow. I need it to be white. Preferably live, but I can make do in a pinch. Are you familiar with cows? <span class="italics">Bos taurus.</span> You can probably find something at the market. Boys part with their cows for the queerest of prices.</p>
+
+			<code>
+				var cow = {color:"white"};
+			</code>
+
+			<img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/white-cow-jojo1-photography.jpg" alt="a white cow">
+
+		</section>
+		<section class="main-section" id="Cape_as_Red_as_Blood">
+			<header>Cape as Red as Blood</header>
+			<p>It's a coat for people who don't know how to sew sleeves. Doesn't matter from who. It doesn't matter what you need to do or who you have to upset in order to get it. Bring me that cape. Yes, the color matters. I want red.  I don't do salmon or orange or burnt sienna. The darker red the better. Like you're looking for a lost innocence or death allegory.</p>
+			<code>
+				var cape = {color: "red"};
+			</code>
+
+			<img src="https://www.daisydaisydirect.co.uk/user/products/large/great-pretenders-little-red-riding-hood-cape-daisydaisy-brighton[1].jpg" alt="a red cape">
+			
+		</section>
+		<section class="main-section" id="Hair_as_Yellow_as_Corn">
+			<header>Hair as Yellow as Corn</header>
+			<p>Yellow hair. Keep away from towers. What else could you possibly need to know? Is this kingdom entirely devoid of blonds? This should be the easiest item on the list for you, really.</p>
+			<code>
+				var hair = {color:"yellow"};
+			</code>
+
+			<img src="https://content.latest-hairstyles.com/wp-content/uploads/mustard-yellow-500x625.jpg" alt="yellow hair">
+			
+		</section>
+		<section class="main-section" id="Slipper_as_Pure_as_Gold">
+			<header>Slipper as Pure as Gold</header>
+			<p>I need that shoe. By the way, did you know a cow can digest practically anything? Their stomachs have four chambers.</p>
+			<code>
+				var slipper = {material: "gold-like"};
+			</code>
+
+			<img src="https://lh3.googleusercontent.com/proxy/TLpje5qEvJ4zHsB0P9-miSA4J_B9i0z2Jxh3aWOQY2e3DDsH2eJ6XEag16lNDG_ddUhtPov0FixE_puBZ_gmEkOMeV7VX_6EBpW0_w" alt="a golden slipper">
+		</section>
+	</main>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
