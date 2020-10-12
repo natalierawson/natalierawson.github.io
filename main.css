@@ -40,7 +40,7 @@ h1,h2,h3,h4,.navbar-brand {
 	font-family: "Calligraffitti";
 }
 
-nav a {
+div a, footer nav a {
 	color: #99d6ff;
 }
 
@@ -118,11 +118,11 @@ p {
 	text-align: center;
 }
 
-#projects nav a {
+#projects div a {
 	display: block;
 }
 
-#projects nav a:hover {
+#projects div a:hover {
 	color: #ffedaa;
 }
 
@@ -223,7 +223,7 @@ footer nav a:hover {
 	img#headshot {
 		height: 20rem;
 	}
-	#projects nav a {
+	#projects div a {
 		font-size: 1.5rem;
 	}
 	#skills ul {
@@ -244,7 +244,7 @@ footer nav a:hover {
 }
 
 @media (min-width: 1441px) and (max-width: 1919px) {
-	#projects nav a {
+	#projects div a {
 		font-size: 1.25rem;
 	}
 	#skills ul li {
@@ -282,11 +282,11 @@ footer nav a:hover {
 		flex-wrap: wrap;
 		justify-content: flex-start;
 	}
-	#projects nav {
+	#projects div {
 		width: 100%;
 		padding-bottom: 20px;
 	}
-	#projects nav a {
+	#projects div a {
 		padding-bottom: 10px;
 		padding-right: 0px;
 	}
@@ -328,11 +328,11 @@ footer nav a:hover {
 		flex-wrap: wrap;
 		justify-content: flex-start;
 	}
-	#projects nav {
+	#projects div {
 		width: 100%;
 		padding-bottom: 20px;
 	}
-	#projects nav a {
+	#projects div a {
 		width: 190px;
 		padding-bottom: 10px;
 		padding-right: 0px;
@@ -383,7 +383,7 @@ footer nav a:hover {
 		flex-wrap: nowrap;
 		margin: auto;
 	}
-	#projects nav {
+	#projects div {
 		margin: auto;
 	}
 	#projects nav a {
