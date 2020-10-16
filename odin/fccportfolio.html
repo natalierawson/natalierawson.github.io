@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Free Code Camp Responsive Web Design Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Arima+Madurai&display=swap" rel="stylesheet">
+	<link href="fccportfolio.css" rel="stylesheet" type="text/css">
+	<style>
+
+@media (min-width: 851px) {
+	#projects {
+		height: 180vh;
+		background-size:125%;
+	}
+}
+
+
+@media (max-width: 850px) {
+	#projects {
+		background-size: 250%;
+		height: 350vh;
+	}
+
+	#project-container {
+		grid-template-rows: 400px 400px 400px 400px;
+		grid-template-columns: 400px;
+		grid-gap: 20px;
+		grid-template-areas: "tribute"
+							  "survey"
+							  "plp"
+							  "doc";
+		width: 400px;
+		margin: 0 auto;
+	}
+
+}
+
+@media (max-width: 600px) {
+	#projects {
+		background-size: 350%;
+	}
+}
+
+@media(max-width: 515px){
+
+	#off-page {
+		text-align: right;
+	}
+
+	#navbar ul li:last-child {
+		margin-top: 5px;
+	}
+}
+
+@media (max-width: 420px) {
+	#projects {
+		background-size: 500%;
+	}
+
+	#project-container {
+		grid-template-rows:25% 25% 25% 25%;
+		grid-template-columns: 100%;
+		grid-gap: 20px;
+		grid-template-areas: "tribute"
+							  "survey"
+							  "plp"
+							  "doc";
+		width:80%;
+		margin: 0 auto;
+	}
+
+	.project-tile {
+		width:100%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 379px) {
+	#welcome-text p {
+		width: 90%;
+		min-width: unset;
+	}
+}
+
+@media (max-width: 336px) {
+	#welcome-section {
+		padding-top: 60px;
+	}
+}
+
+@media (max-width: 305px) {
+	#welcome-section {
+		padding-top: 80px;
+	}
+}
+
+		/*iPad */
+@media (width: 768px) and (height: 1024px) {
+	#projects {
+		height: 180vh;
+	}
+}
+
+/*iPad Pro*/
+
+@media only screen and (width: 1024px) and (height: 1366px)  {
+	#projects {
+		height: 80vh !important;
+		background-size: 120% !important;
+	}
+}
+
+
+	</style>
+</head>
+<body>
+	<nav id="navbar">
+		<ul id="page-nav">
+			<li><a href="#welcome-section">Welcome</a></li>
+			<li><a href="#projects">Projects</a></li>
+		</ul>
+		<ul id="off-page"> 
+			<li><a id="profile-link" target="_blank" href="https://www.freecodecamp.org/fcc1d43e6b8">FCC Profile</a></li>
+			<li><a href="https://natalierawson.github.io" target="_blank">Back To Main Portfolio</a></li>
+		</ul>
+		
+	</nav>
+	<section id="welcome-section">
+		<div id="welcome-text">
+			<h1>Free Code Camp Responsive Web Design Project Hub</h1>
+			<p>Truth is, I already have a main portfolio which dates from 2016. This is a page that serves as a portal to code pens for projects I've done for Free Code Camp's Responsive Web Design Certificate. In the future, I may update it to include more projects affiliated with Odin or Free Code Camp. You may have noticed that I like musicals. So far my chosen page topics have been Stephen Sondheim, <span class="italics">The Phantom of the Opera</span>, and <span class="italics">Into the Woods</span>. We'll see where other projects take me.</p>
+		</div>
+	</section>
+	<section id="projects">
+		<h2>Projects</h2>
+		<div id="project-container">
+			<a href="https://codepen.io/NRawson/pen/vYKOwqL" id="tribute-tile" class="project-tile">
+				<section>
+					<h3>Tribute</h3>
+					<p>See The Pen <span class="arrows">>>></span></p>
+				</section>
+			</a>
+			<a href="https://codepen.io/NRawson/pen/PozqvMW"  id="survey-tile" class="project-tile">
+				<section>
+					<h3>Survey</h3>
+					<p>See The Pen <span class="arrows">>>></span></p>
+				</section>
+			</a>
+			<a href="https://codepen.io/NRawson/pen/Pozqrqm"  id="plp-tile"  class="project-tile">
+				<section>
+					<h3>PLP</h3>
+					<p>See The Pen <span class="arrows">>>></span></p>
+				</section>
+			</a>
+			<a href="https://codepen.io/NRawson/pen/VwjLJee"  id="doc-tile"  class="project-tile">
+				<section>
+					<h3>Technical Documentation</h3>
+					<p>See The Pen <span class="arrows">>>></span></p>
+				</section>
+			</a>
+		</div>
+	</section>
+	<footer><p>Page built and designed by Natalie Rawson. 2020.</p></footer>
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

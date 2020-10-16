@@ -101,7 +101,7 @@ p {
 
 #toggledContent a:hover {
 	color: #ffedaa;
-	transition: color .5s ease;
+	transition: .5s;
 }
 
 #site-container {
@@ -320,10 +320,10 @@ footer nav a:hover {
 	}
 }
 
-@media (min-width: 260px) and (max-width: 426px) {
+@media (max-width: 426px) {
 	#projects {
 		flex-direction: column;
-		width: 350px;
+		width: auto;
 		margin: auto;
 		flex-wrap: wrap;
 		justify-content: flex-start;
@@ -333,9 +333,10 @@ footer nav a:hover {
 		padding-bottom: 20px;
 	}
 	#projects div a {
-		width: 190px;
+		max-width: 190px;
 		padding-bottom: 10px;
 		padding-right: 0px;
+		margin: auto;
 	}
 	h3 {
 		margin: auto;

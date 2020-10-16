@@ -13,8 +13,6 @@ header {
 	flex-direction: row;
 	position: fixed;
 	background: rgb(255,255,255);
-	/*background: url("https://www.wookey.co.uk/wp-content/uploads/2018/04/paper-background.jpg") center center;*/
-	/*background: linear-gradient(90deg, rgba(255,255,255,1) 35%, rgba(247,238,216,1) 45%);*/
 	justify-content: space-between;
 	margin: 0 auto;
 	z-index: 3;

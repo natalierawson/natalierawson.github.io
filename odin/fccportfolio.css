@@ -1,0 +1,176 @@
+html, body {
+	margin: 0;
+	scroll-behavior: smooth;
+	background:#1e3353; 
+}
+
+h1, h2, h3, p, a {
+	color: #fff;
+}
+
+h1, h2, h3 {
+	font-family: 'Arima Madurai', cursive;
+}
+
+p,a {
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#navbar {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	z-index: 3;
+	background:#1e3353;
+	
+}
+
+#navbar ul {
+	list-style-type: none;
+	padding-inline-start: 20px;
+}
+
+#navbar li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#welcome-section {
+	text-align: center;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background: #09222F;
+}
+
+#welcome-text {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.italics {
+	font-style: italic;
+}
+
+#welcome-section p {
+	width: 50%;
+	margin: auto;
+	min-width: 350px;
+	line-height: 1.4;
+}
+
+#projects {
+	width: 100%;
+	height: 150vh;
+	background: url("https://i.imgur.com/TRHugxW.jpg") no-repeat;
+	background-size: 150%;
+	margin: 0;
+}
+
+#projects h2 {
+	text-align: center;
+	margin-bottom: 50px;
+	padding-top: 50px;
+	margin-top: 0;
+}
+
+#project-container {
+	display: grid;
+	grid-template-rows: 400px 400px;
+	grid-template-columns: 400px 400px;
+	grid-gap: 20px;
+	grid-template-areas: "tribute survey"
+						 "plp doc";
+	width: 820px;
+	margin: 0 auto;
+}
+
+.project-tile {
+	height: 400px;
+	width: 400px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size:  auto 400px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.project-tile h3 {
+	background-color:#1e3353;
+	color: #fff;
+	position: absolute;
+	top: -20px;
+	padding: 10px 0;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+	width: 100%;
+}
+
+.project-tile p {
+	position: absolute;
+	bottom: -20px;
+	padding: 10px 0;
+	width: 100%;
+	background: #1e3353;
+	color: #fff;
+	border-radius: 0px 0px 10px 10px;
+	text-align: center;
+	transition: .5s;
+}
+
+.arrows {
+	transition: .25s;
+}
+
+.project-tile p:hover {
+	background: #C083A4;
+	color: #1e3353;
+	font-weight: bold;
+}
+
+.project-tile p:hover > .arrows{
+	
+}
+
+#tribute-tile {
+	background-image: url("https://i.imgur.com/KOXdeDR.png");
+	grid-area: tribute;
+
+}
+
+#survey-tile {
+	background-image: url("https://i.imgur.com/a6hBMgE.png");
+	grid-area: survey;
+}
+
+#plp-tile {
+	background-image: url("https://i.imgur.com/rL4gX0T.png");
+	grid-area: plp;
+}
+
+#doc-tile {
+	background-image: url("https://i.imgur.com/YoxAOJM.png");
+	grid-area: doc;
+}
+
+
+footer {
+	background: #1e3353;
+	text-align: center;
+}
+
+
+
+
