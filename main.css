@@ -64,7 +64,7 @@ h2 {
 	font-size: 50px;
 	color: #ffedaa;
 	text-align: center;
-	padding: 50px 0;
+	padding: 25px 0;
 }
 
 h3 {
@@ -79,7 +79,7 @@ h4 {
 	margin-left: 10px;
 }
 
-a,p {
+a,p, li {
 	font-family: "Raleway";
 }
 
@@ -110,9 +110,7 @@ p {
 
 
 #projects {
-	display: grid;
-	grid-template-rows: auto 8em;
-	grid-template-columns: .85fr .85fr .85fr;
+	display: flex;
 	text-align: center;
 }
 
@@ -128,32 +126,24 @@ p {
 	color: #ffedaa;
 }
 
-
 #skills {
 	display: flex;
-	justify-content: space-around;
-	padding-bottom: 80px;
+	justify-content: center;
+	color: white;
 }
 
 #skills ul {
-	display: flex;
-	flex-wrap: wrap-reverse;
 	list-style-type: none;
-	justify-content: space-around;
-	width: 200px;
+	font-size: 1rem;
+	text-align: center;
+	padding-left: 0;
 }
-
-#skills ul li img {
-	height: 75px;
-	padding: 10px 0;
-}
-
 
 #about {
 	width: 100%;
 	margin: auto;
 	padding-bottom: 20px;
-	background: white;
+	background: rgba(255,255,255,.85);
 }
 
 #about-container {
@@ -165,7 +155,7 @@ p {
 }
 
 #about h2 {
-	color: #0047b3;
+	color: #000;
 }
 
 img#headshot {
@@ -210,7 +200,7 @@ footer nav a:hover {
 	color: #ffedaa;
 }
 
-@media (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
 	a {
 		font-size: 1.5rem;
 	}
@@ -229,15 +219,6 @@ footer nav a:hover {
 	#projects div a {
 		font-size: 1.5rem;
 	}
-	#skills ul {
-		width: 350px;
-	}
-	#skills ul li {
-		width: 150px;
-	}
-	#skills ul li img {
-		height: 100px;
-	}
 	#html5 {
 		margin-left: -10px;
 	}
@@ -246,36 +227,6 @@ footer nav a:hover {
 	}
 }
 
-@media (min-width: 1441px) and (max-width: 1919px) {
-	#projects div a {
-		font-size: 1.25rem;
-	}
-	#skills ul li {
-		width: 60px;
-	}
-	#skills ul li img {
-		height: 100px;
-		padding: 20px;
-	}
-	#html5 {
-		margin-left: -10px;
-	}
-}
-
-@media(min-width: 768px) and (max-width: 1440px) {
-	#skills {
-		margin-top: -30px;
-	}
-	#skills ul li {
-		width: 70px;
-	}
-	#skills ul li img {
-		height: 70px;
-	}
-	#html5 {
-		margin-left: -10px;
-	}
-}
 
 @media (min-width: 427px) and (max-width: 767px) {
 	#projects {
@@ -290,40 +241,16 @@ footer nav a:hover {
 		padding-bottom: 20px;
 	}
 	#projects div a {
-		padding-bottom: 10px;
 		padding-right: 0px;
 	}
 	h3 {
 		margin: auto;
-		margin-bottom: 10px;
-	}
-	#skills {
-		margin-top: -30px;
-	}
-	#skills ul li {
-		width: 60px;
-	}
-	#skills ul li img {
-		height: 65px;
-	}
-	#html5 {
-		margin-left: -5px;
-	}
+		margin-bottom: 10px;}
+
 }
 
-@media (min-width: 400px) and (max-width: 426px) {
-	#skills ul li img {
-		height: 60px;
-	}
-}
 
-@media (min-width: 260px) and (max-width: 399px) {
-	#skills ul li img {
-		height: 55px;
-	}
-}
-
-@media (max-width: 426px) {
+@media screen and (max-width: 426px) {
 	#projects {
 		display: flex;
 		flex-direction: column;
@@ -338,24 +265,20 @@ footer nav a:hover {
 	}
 	#projects div a {
 		max-width: 190px;
-		padding-bottom: 10px;
 		padding-right: 0px;
 		margin: auto;
 	}
 	h3 {
 		margin: auto;
 		text-align: center;
+		font-size: 1.5rem;
+		padding-bottom: .5rem;
 	}
 	#site-container {
 		width: 100%;
 		overflow-x: hidden;
 	}
-	#skills {
-		margin-right: 40px;
-	}
-	#skills ul {
-		width: 100px;
-	}
+	
 	img#headshot {
 		height: 15em;
 		margin: auto;
@@ -380,12 +303,9 @@ footer nav a:hover {
 		font-size: 2rem;
 		padding: 10px;
 	}
-	h3 {
-		font-size: 1.5rem;
-		padding-bottom: .5rem;
-	}
+
 	#projects {
-		flex-wrap: nowrap;
+		display: block !important;
 		margin: auto;
 	}
 	#projects div {
@@ -404,5 +324,11 @@ footer nav a:hover {
 	}
 	footer a {
 		font-size: .75rem;
+	}
+
+	section#skills {
+		display: block !important;
+		position: relative;
+		justify-content: unset !important;
 	}
 }

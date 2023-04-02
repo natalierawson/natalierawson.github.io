@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Natalie's Tarot App Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <div id="container">   
+            <div id="form-wrapper">
+                <form id="tarot-form" action="#" onsubmit="return false;">
+                    <div id="top-wrapper">
+                        <h2>Reading Set Up</h2>
+                        <img src="icons/double-up-chevron.png" id="chevrons">
+                    </div>
+                    <div id="form-content">
+                        <p><span>Disclaimer:</span> Tarot is for entertainment purposes only. Nothing is guaranteed. If you find yourself becoming distressed by the readings generated here, remember that only you are in charge of your life, not a set of cards that come up via the Fisher-Yates shuffling method. </p>
+                        <div>
+                            <input type="radio" id="one-card" name="spread-type" value="one" checked>
+                            <label for="one">One Card</label>
+                            <input type="radio" id="three-card" name="spread-type" value="three">
+                            <label for="three">Three Cards</label>
+                        </div>
+                        <label for="one-card-list" id="one-card-list-label">Select a one card spread:</label>
+                        <select name="one-card-list" form="tarot-form" id="one-card-list">
+                            <option value="advice">Advice</option>
+                            <option value="circumstances">Circumstances</option>
+                            <option value="outcome">Outcome</option>
+                            <optgroup label="Time (Relative)">
+                                <option value="past">Past</option>
+                                <option value="present">Present</option>
+                                <option value="future">Future</option>
+                            </optgroup>
+                            <optgroup label="Time (Specific)">
+                                <option value="this-moment">This Moment</option>
+                                <option value="today">Today</option>
+                                <option value="tomorrow">Tomorrow</option>
+                                <option value="week">The Week</option>
+                                <option value="month">The Month</option>
+                                <option value="year">The Year</option>
+                            </optgroup>
+                            <optgroup label="The Five Ws and One H">
+                                <option value="who">Who</option>
+                                <option value="what">What</option>
+                                <option value="where">Where</option>
+                                <option value="when">When</option>
+                                <option value="why">Why</option>
+                                <option value="how">How</option>
+                            </optgroup>
+                            <option value="yesno">Yes/No</option>
+                            <option value="custom">Custom</option> 
+                        </select>
+
+                        <label for="three-card-list" class="hidden" id="three-card-list-label">Select a three card spread:</label>
+                        <select name="three-card-list" form="tarot-form" id="three-card-list" class="hidden">
+                        
+                            <option value="eventseq">1st Event/2nd Event/3rd Event</option>
+                            <option value="ppf">Past/Present/Future</option>
+                            <option value="mbs">Mind/Body/Spirit</option>
+                            <option value="opts">Option 1/Option 2/Option 3</option>
+                            <optgroup label="People">
+                                <option value="ppr">Person 1/Person 2/Relationship Dynamic</option>
+                                <option value="ppo">Person 1/Person 2/Outcome</option>
+                                <option value="ppp">Person 1/Person 2/Person 3</option>
+                            </optgroup>
+                            <option value="sao">Situation/Action/Outcome</option>
+                            <optgroup label="Time">
+                                <option value="threedays">Day 1/Day 2/Day 3</option>
+                                <option value="threeweeks">Week 1/Week 2/Week 3</option>
+                                <option value="threemonths">Month 1/Month 2/Month 3</option>
+                                <option value="threeyears">Year 1/Year 2/Year 3</option>
+                            </optgroup>
+                            <option value="wwc">When/Where/Circumstances</option>
+                            <option value="custom">Custom</option>
+                        </select>
+
+                        <input type="submit" id="shuffle-draw">
+                    </div>
+                </form>
+            </div>
+        
+            <main id="tarot-zone">
+            <!-- <button id="draw-one" class="button draw" role="button">Single Card</button>
+            <button id="draw-three" class="button draw" role="button">Three Cards</button> -->
+                <div id="card-display">
+
+                </div>
+                <div id="text-display">
+
+                </div>
+           
+            </main>
+            <button id="change-background" class="button" role="button">Background</button>
+        </div>
+        <footer>
+            <p>Site created by Natalie Rawson. 2021.</p>
+            <p>Kaggle Credit for Tarot material here.</p>
+            <p>Flaticon Credit for Icons here</p>
+        </footer>
+        <script src="tarot-images.js"></script>
+        <script src="tarot.js"></script>
+    </body>
+</html>
